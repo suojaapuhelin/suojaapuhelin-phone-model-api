@@ -2,6 +2,8 @@
 header('Content-Type: application/json; charset=utf-8');
 header('Access-Control-Allow-Origin: *');
 
+$path = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
+
 $apiUrl = rtrim(getenv('MCF_API_URL'), '/');
 $user = getenv('MCF_API_USER');
 $key = getenv('MCF_API_KEY');
@@ -24,13 +26,15 @@ do {
 
     $response = curl_exec($ch);
     $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+    $error = curl_error($ch);
     curl_close($ch);
 
     if ($httpCode !== 200 || !$response) {
         echo json_encode([
             'status' => 'error',
             'endpoint' => $endpoint,
-            'http_code' => $httpCode
+            'http_code' => $httpCode,
+            'error' => $error ?: null
         ], JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
         exit;
     }
@@ -68,9 +72,15 @@ do {
 
 } while ($page <= $pageCount);
 
+if ($path === '/models') {
+    echo json_encode($all, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
+    exit;
+}
+
 echo json_encode([
     'status' => 'ok',
     'count' => count($all),
+    'models_url' => '/models',
     'models' => $all
 ], JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
 ?>
