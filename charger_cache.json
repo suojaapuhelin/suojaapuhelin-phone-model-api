@@ -1,0 +1,4682 @@
+{
+  "model_5": {
+    "power": {
+      "wired_max_w": 20,
+      "wireless_max_w": 7.5,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "USB-PD"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_6": {
+    "power": {
+      "wired_max_w": 20,
+      "wireless_max_w": 7.5,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "USB-PD"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_7": {
+    "power": {
+      "wired_max_w": 20,
+      "wireless_max_w": 7.5,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "USB-PD"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_8": {
+    "power": {
+      "wired_max_w": 5,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": null
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_9": {
+    "power": {
+      "wired_max_w": 5,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": null
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_11": {
+    "power": {
+      "wired_max_w": 5,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": null
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_54": {
+    "power": {
+      "wired_max_w": 5,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": null
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_223": {
+    "power": {
+      "wired_max_w": 20,
+      "wireless_max_w": 7.5,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "USB-PD"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_224": {
+    "power": {
+      "wired_max_w": 20,
+      "wireless_max_w": 7.5,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "USB-PD"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_225": {
+    "power": {
+      "wired_max_w": 20,
+      "wireless_max_w": 7.5,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "USB-PD"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_292": {
+    "power": {
+      "wired_max_w": 20,
+      "wireless_max_w": 7.5,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "USB-PD"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_293": {
+    "power": {
+      "wired_max_w": 20,
+      "wireless_max_w": 7.5,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "USB-PD"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_294": {
+    "power": {
+      "wired_max_w": 20,
+      "wireless_max_w": 7.5,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "USB-PD"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_312": {
+    "power": {
+      "wired_max_w": 20,
+      "wireless_max_w": 7.5,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "USB-PD"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_490": {
+    "power": {
+      "wired_max_w": 20,
+      "wireless_max_w": 7.5,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "USB-PD"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_359": {
+    "power": {
+      "wired_max_w": 20,
+      "wireless_max_w": 15,
+      "wireless_protocol": "MagSafe",
+      "fast_charge_tech": "USB-PD"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_360": {
+    "power": {
+      "wired_max_w": 20,
+      "wireless_max_w": 15,
+      "wireless_protocol": "MagSafe",
+      "fast_charge_tech": "USB-PD"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_361": {
+    "power": {
+      "wired_max_w": 20,
+      "wireless_max_w": 15,
+      "wireless_protocol": "MagSafe",
+      "fast_charge_tech": "USB-PD"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_362": {
+    "power": {
+      "wired_max_w": 20,
+      "wireless_max_w": 15,
+      "wireless_protocol": "MagSafe",
+      "fast_charge_tech": "USB-PD"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_449": {
+    "power": {
+      "wired_max_w": 20,
+      "wireless_max_w": 15,
+      "wireless_protocol": "MagSafe",
+      "fast_charge_tech": "USB-PD"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_450": {
+    "power": {
+      "wired_max_w": 20,
+      "wireless_max_w": 15,
+      "wireless_protocol": "MagSafe",
+      "fast_charge_tech": "USB-PD"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_451": {
+    "power": {
+      "wired_max_w": 20,
+      "wireless_max_w": 15,
+      "wireless_protocol": "MagSafe",
+      "fast_charge_tech": "USB-PD"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_452": {
+    "power": {
+      "wired_max_w": 20,
+      "wireless_max_w": 12,
+      "wireless_protocol": "MagSafe",
+      "fast_charge_tech": "USB-PD"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_509": {
+    "power": {
+      "wired_max_w": 20,
+      "wireless_max_w": 15,
+      "wireless_protocol": "MagSafe",
+      "fast_charge_tech": "USB-PD"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_510": {
+    "power": {
+      "wired_max_w": 27,
+      "wireless_max_w": 15,
+      "wireless_protocol": "MagSafe",
+      "fast_charge_tech": "USB-PD"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_511": {
+    "power": {
+      "wired_max_w": 20,
+      "wireless_max_w": 15,
+      "wireless_protocol": "MagSafe",
+      "fast_charge_tech": "USB-PD"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_512": {
+    "power": {
+      "wired_max_w": 27,
+      "wireless_max_w": 15,
+      "wireless_protocol": "MagSafe",
+      "fast_charge_tech": "USB-PD"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_607": {
+    "power": {
+      "wired_max_w": 27,
+      "wireless_max_w": 15,
+      "wireless_protocol": "MagSafe",
+      "fast_charge_tech": "USB-PD"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_608": {
+    "power": {
+      "wired_max_w": 27,
+      "wireless_max_w": 15,
+      "wireless_protocol": "MagSafe",
+      "fast_charge_tech": "USB-PD"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_613": {
+    "power": {
+      "wired_max_w": 27,
+      "wireless_max_w": 15,
+      "wireless_protocol": "MagSafe",
+      "fast_charge_tech": "USB-PD"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_614": {
+    "power": {
+      "wired_max_w": 27,
+      "wireless_max_w": 15,
+      "wireless_protocol": "MagSafe",
+      "fast_charge_tech": "USB-PD"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_742": {
+    "power": {
+      "wired_max_w": 30,
+      "wireless_max_w": 25,
+      "wireless_protocol": "MagSafe",
+      "fast_charge_tech": "USB-PD"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_743": {
+    "power": {
+      "wired_max_w": 30,
+      "wireless_max_w": 25,
+      "wireless_protocol": "MagSafe",
+      "fast_charge_tech": "USB-PD"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_744": {
+    "power": {
+      "wired_max_w": 45,
+      "wireless_max_w": 25,
+      "wireless_protocol": "MagSafe",
+      "fast_charge_tech": "USB-PD"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_745": {
+    "power": {
+      "wired_max_w": 45,
+      "wireless_max_w": 25,
+      "wireless_protocol": "MagSafe",
+      "fast_charge_tech": "USB-PD"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_998": {
+    "power": {
+      "wired_max_w": 30,
+      "wireless_max_w": 25,
+      "wireless_protocol": "MagSafe",
+      "fast_charge_tech": "USB-PD"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_999": {
+    "power": {
+      "wired_max_w": 30,
+      "wireless_max_w": 25,
+      "wireless_protocol": "MagSafe",
+      "fast_charge_tech": "USB-PD"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_1000": {
+    "power": {
+      "wired_max_w": 45,
+      "wireless_max_w": 25,
+      "wireless_protocol": "MagSafe",
+      "fast_charge_tech": "USB-PD"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_1001": {
+    "power": {
+      "wired_max_w": 45,
+      "wireless_max_w": 25,
+      "wireless_protocol": "MagSafe",
+      "fast_charge_tech": "USB-PD"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_1007": {
+    "power": {
+      "wired_max_w": 20,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "USB-PD"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_1134": {
+    "power": {
+      "wired_max_w": 30,
+      "wireless_max_w": 25,
+      "wireless_protocol": "MagSafe",
+      "fast_charge_tech": "USB-PD"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_14": {
+    "power": {
+      "wired_max_w": 15,
+      "wireless_max_w": 12,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Adaptive Fast Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_15": {
+    "power": {
+      "wired_max_w": 15,
+      "wireless_max_w": 12,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Adaptive Fast Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_16": {
+    "power": {
+      "wired_max_w": 15,
+      "wireless_max_w": 11,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Adaptive Fast Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_17": {
+    "power": {
+      "wired_max_w": 15,
+      "wireless_max_w": 11,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Adaptive Fast Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_20": {
+    "power": {
+      "wired_max_w": 15,
+      "wireless_max_w": 12,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Adaptive Fast Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_21": {
+    "power": {
+      "wired_max_w": 15,
+      "wireless_max_w": 12,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Adaptive Fast Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_275": {
+    "power": {
+      "wired_max_w": 25,
+      "wireless_max_w": 15,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Super Fast Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_276": {
+    "power": {
+      "wired_max_w": 25,
+      "wireless_max_w": 15,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Super Fast Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_277": {
+    "power": {
+      "wired_max_w": 25,
+      "wireless_max_w": 15,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Super Fast Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_317": {
+    "power": {
+      "wired_max_w": 25,
+      "wireless_max_w": 15,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Super Fast Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_352": {
+    "power": {
+      "wired_max_w": 25,
+      "wireless_max_w": 15,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Super Fast Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_304": {
+    "power": {
+      "wired_max_w": 25,
+      "wireless_max_w": 15,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Super Fast Charge 2.0"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_305": {
+    "power": {
+      "wired_max_w": 25,
+      "wireless_max_w": 15,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Super Fast Charge 2.0"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_306": {
+    "power": {
+      "wired_max_w": 45,
+      "wireless_max_w": 15,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Super Fast Charge 2.0"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_384": {
+    "power": {
+      "wired_max_w": 25,
+      "wireless_max_w": 15,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Super Fast Charge 2.0"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_410": {
+    "power": {
+      "wired_max_w": 25,
+      "wireless_max_w": 15,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Super Fast Charge 2.0"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_411": {
+    "power": {
+      "wired_max_w": 25,
+      "wireless_max_w": 15,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Super Fast Charge 2.0"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_412": {
+    "power": {
+      "wired_max_w": 45,
+      "wireless_max_w": 15,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Super Fast Charge 2.0"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_482": {
+    "power": {
+      "wired_max_w": 25,
+      "wireless_max_w": 15,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Super Fast Charge 2.0"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_483": {
+    "power": {
+      "wired_max_w": 25,
+      "wireless_max_w": 15,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Super Fast Charge 2.0"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_484": {
+    "power": {
+      "wired_max_w": 45,
+      "wireless_max_w": 15,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Super Fast Charge 2.0"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_485": {
+    "power": {
+      "wired_max_w": 45,
+      "wireless_max_w": 15,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Super Fast Charge 2.0"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_521": {
+    "power": {
+      "wired_max_w": 25,
+      "wireless_max_w": 15,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Super Fast Charge 2.0"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_522": {
+    "power": {
+      "wired_max_w": 45,
+      "wireless_max_w": 15,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Super Fast Charge 2.0"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_523": {
+    "power": {
+      "wired_max_w": 45,
+      "wireless_max_w": 15,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Super Fast Charge 2.0"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_606": {
+    "power": {
+      "wired_max_w": 25,
+      "wireless_max_w": 15,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Super Fast Charge 2.0"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_635": {
+    "power": {
+      "wired_max_w": 25,
+      "wireless_max_w": 15,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Super Fast Charge 2.0"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_636": {
+    "power": {
+      "wired_max_w": 45,
+      "wireless_max_w": 15,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Super Fast Charge 2.0"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_637": {
+    "power": {
+      "wired_max_w": 45,
+      "wireless_max_w": 15,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Super Fast Charge 2.0"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_736": {
+    "power": {
+      "wired_max_w": 25,
+      "wireless_max_w": 15,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Super Fast Charge 2.0"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_983": {
+    "power": {
+      "wired_max_w": 25,
+      "wireless_max_w": 15,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Super Fast Charge 2.0"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_984": {
+    "power": {
+      "wired_max_w": 45,
+      "wireless_max_w": 15,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Super Fast Charge 2.0"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_985": {
+    "power": {
+      "wired_max_w": 45,
+      "wireless_max_w": 15,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Super Fast Charge 2.0"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_1010": {
+    "power": {
+      "wired_max_w": 45,
+      "wireless_max_w": 15,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Super Fast Charge 2.0"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_1075": {
+    "power": {
+      "wired_max_w": 25,
+      "wireless_max_w": 15,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Super Fast Charge 2.0"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_1128": {
+    "power": {
+      "wired_max_w": 25,
+      "wireless_max_w": 15,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Super Fast Charge 2.0"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_1129": {
+    "power": {
+      "wired_max_w": 45,
+      "wireless_max_w": 15,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Super Fast Charge 2.0"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_1130": {
+    "power": {
+      "wired_max_w": 45,
+      "wireless_max_w": 15,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Super Fast Charge 2.0"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_22": {
+    "power": {
+      "wired_max_w": 10,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": null
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_23": {
+    "power": {
+      "wired_max_w": 10,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": null
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_25": {
+    "power": {
+      "wired_max_w": 15,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Adaptive Fast Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_26": {
+    "power": {
+      "wired_max_w": 10,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": null
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_27": {
+    "power": {
+      "wired_max_w": 5,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": null
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_28": {
+    "power": {
+      "wired_max_w": 15,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Adaptive Fast Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_56": {
+    "power": {
+      "wired_max_w": 10,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": null
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_193": {
+    "power": {
+      "wired_max_w": 10,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": null
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_194": {
+    "power": {
+      "wired_max_w": 10,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": null
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_206": {
+    "power": {
+      "wired_max_w": 10,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": null
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_238": {
+    "power": {
+      "wired_max_w": 15,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Adaptive Fast Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_239": {
+    "power": {
+      "wired_max_w": 10,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": null
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_240": {
+    "power": {
+      "wired_max_w": 15,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Adaptive Fast Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_243": {
+    "power": {
+      "wired_max_w": 10,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": null
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_281": {
+    "power": {
+      "wired_max_w": 15,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Adaptive Fast Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_282": {
+    "power": {
+      "wired_max_w": 15,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Adaptive Fast Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_283": {
+    "power": {
+      "wired_max_w": 25,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Adaptive Fast Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_288": {
+    "power": {
+      "wired_max_w": 15,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Adaptive Fast Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_289": {
+    "power": {
+      "wired_max_w": 15,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Adaptive Fast Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_298": {
+    "power": {
+      "wired_max_w": 25,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Super Fast Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_299": {
+    "power": {
+      "wired_max_w": 25,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Super Fast Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_353": {
+    "power": {
+      "wired_max_w": 25,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Super Fast Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_363": {
+    "power": {
+      "wired_max_w": 15,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Adaptive Fast Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_374": {
+    "power": {
+      "wired_max_w": 15,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Adaptive Fast Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_380": {
+    "power": {
+      "wired_max_w": 15,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Adaptive Fast Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_394": {
+    "power": {
+      "wired_max_w": 15,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Adaptive Fast Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_403": {
+    "power": {
+      "wired_max_w": 15,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Adaptive Fast Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_404": {
+    "power": {
+      "wired_max_w": 25,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Super Fast Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_426": {
+    "power": {
+      "wired_max_w": 15,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Adaptive Fast Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_429": {
+    "power": {
+      "wired_max_w": 25,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Super Fast Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_431": {
+    "power": {
+      "wired_max_w": 25,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Super Fast Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_442": {
+    "power": {
+      "wired_max_w": 15,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Adaptive Fast Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_444": {
+    "power": {
+      "wired_max_w": 25,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Super Fast Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_454": {
+    "power": {
+      "wired_max_w": 15,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Adaptive Fast Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_479": {
+    "power": {
+      "wired_max_w": 25,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Super Fast Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_480": {
+    "power": {
+      "wired_max_w": 25,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Super Fast Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_481": {
+    "power": {
+      "wired_max_w": 15,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Adaptive Fast Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_489": {
+    "power": {
+      "wired_max_w": 25,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Super Fast Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_494": {
+    "power": {
+      "wired_max_w": 15,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Adaptive Fast Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_499": {
+    "power": {
+      "wired_max_w": 25,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Super Fast Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_513": {
+    "power": {
+      "wired_max_w": 15,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Adaptive Fast Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_519": {
+    "power": {
+      "wired_max_w": 25,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Super Fast Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_520": {
+    "power": {
+      "wired_max_w": 25,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Super Fast Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_532": {
+    "power": {
+      "wired_max_w": 25,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Super Fast Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_538": {
+    "power": {
+      "wired_max_w": 25,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Super Fast Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_618": {
+    "power": {
+      "wired_max_w": 25,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Super Fast Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_628": {
+    "power": {
+      "wired_max_w": 25,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Super Fast Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_630": {
+    "power": {
+      "wired_max_w": 25,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Super Fast Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_653": {
+    "power": {
+      "wired_max_w": 25,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Super Fast Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_663": {
+    "power": {
+      "wired_max_w": 25,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Super Fast Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_746": {
+    "power": {
+      "wired_max_w": 25,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Super Fast Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_747": {
+    "power": {
+      "wired_max_w": 25,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Super Fast Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_972": {
+    "power": {
+      "wired_max_w": 25,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Super Fast Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_976": {
+    "power": {
+      "wired_max_w": 25,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Super Fast Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_977": {
+    "power": {
+      "wired_max_w": 25,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Super Fast Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_1054": {
+    "power": {
+      "wired_max_w": 25,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Super Fast Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_1055": {
+    "power": {
+      "wired_max_w": 25,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Super Fast Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_1131": {
+    "power": {
+      "wired_max_w": 25,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Super Fast Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_1151": {
+    "power": {
+      "wired_max_w": 25,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Super Fast Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_541": {
+    "power": {
+      "wired_max_w": 25,
+      "wireless_max_w": 15,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Super Fast Charge 2.0"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_542": {
+    "power": {
+      "wired_max_w": 25,
+      "wireless_max_w": 15,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Super Fast Charge 2.0"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_544": {
+    "power": {
+      "wired_max_w": 25,
+      "wireless_max_w": 15,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Super Fast Charge 2.0"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_545": {
+    "power": {
+      "wired_max_w": 25,
+      "wireless_max_w": 15,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Super Fast Charge 2.0"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_610": {
+    "power": {
+      "wired_max_w": 25,
+      "wireless_max_w": 15,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Super Fast Charge 2.0"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_611": {
+    "power": {
+      "wired_max_w": 25,
+      "wireless_max_w": 15,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Super Fast Charge 2.0"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_740": {
+    "power": {
+      "wired_max_w": 25,
+      "wireless_max_w": 15,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Super Fast Charge 2.0"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_741": {
+    "power": {
+      "wired_max_w": 25,
+      "wireless_max_w": 15,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Super Fast Charge 2.0"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_1067": {
+    "power": {
+      "wired_max_w": 25,
+      "wireless_max_w": 15,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Super Fast Charge 2.0"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_1068": {
+    "power": {
+      "wired_max_w": 25,
+      "wireless_max_w": 15,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Super Fast Charge 2.0"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_1069": {
+    "power": {
+      "wired_max_w": 25,
+      "wireless_max_w": 15,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Super Fast Charge 2.0"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_562": {
+    "power": {
+      "wired_max_w": 25,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Super Fast Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_644": {
+    "power": {
+      "wired_max_w": 25,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Super Fast Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_1022": {
+    "power": {
+      "wired_max_w": 25,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Super Fast Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_39": {
+    "power": {
+      "wired_max_w": 22,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Huawei SuperCharge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_41": {
+    "power": {
+      "wired_max_w": 9,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Huawei FastCharge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_42": {
+    "power": {
+      "wired_max_w": 5,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": null
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_43": {
+    "power": {
+      "wired_max_w": 9,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Huawei FastCharge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_44": {
+    "power": {
+      "wired_max_w": 9,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Huawei FastCharge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_45": {
+    "power": {
+      "wired_max_w": 5,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": null
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_46": {
+    "power": {
+      "wired_max_w": 9,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Huawei FastCharge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_49": {
+    "power": {
+      "wired_max_w": 10,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": null
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_55": {
+    "power": {
+      "wired_max_w": 10,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": null
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_67": {
+    "power": {
+      "wired_max_w": 9,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Huawei FastCharge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_191": {
+    "power": {
+      "wired_max_w": 22,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Huawei SuperCharge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_192": {
+    "power": {
+      "wired_max_w": 18,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Huawei FastCharge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_199": {
+    "power": {
+      "wired_max_w": 40,
+      "wireless_max_w": 15,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Huawei SuperCharge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_205": {
+    "power": {
+      "wired_max_w": 40,
+      "wireless_max_w": 15,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Huawei SuperCharge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_207": {
+    "power": {
+      "wired_max_w": 22,
+      "wireless_max_w": 15,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Huawei SuperCharge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_213": {
+    "power": {
+      "wired_max_w": 9,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Huawei FastCharge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_215": {
+    "power": {
+      "wired_max_w": 5,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": null
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_229": {
+    "power": {
+      "wired_max_w": 22,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Huawei SuperCharge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_230": {
+    "power": {
+      "wired_max_w": 18,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Huawei FastCharge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_241": {
+    "power": {
+      "wired_max_w": 18,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Huawei FastCharge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_242": {
+    "power": {
+      "wired_max_w": 40,
+      "wireless_max_w": 15,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Huawei SuperCharge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_245": {
+    "power": {
+      "wired_max_w": 10,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": null
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_246": {
+    "power": {
+      "wired_max_w": 10,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": null
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_279": {
+    "power": {
+      "wired_max_w": 22,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Huawei SuperCharge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_280": {
+    "power": {
+      "wired_max_w": 40,
+      "wireless_max_w": 15,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Huawei SuperCharge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_284": {
+    "power": {
+      "wired_max_w": 5,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": null
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_287": {
+    "power": {
+      "wired_max_w": 18,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Huawei FastCharge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_290": {
+    "power": {
+      "wired_max_w": 22,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Huawei SuperCharge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_291": {
+    "power": {
+      "wired_max_w": 22,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Huawei SuperCharge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_300": {
+    "power": {
+      "wired_max_w": 22,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Huawei SuperCharge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_308": {
+    "power": {
+      "wired_max_w": 18,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Huawei FastCharge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_309": {
+    "power": {
+      "wired_max_w": 18,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Huawei FastCharge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_310": {
+    "power": {
+      "wired_max_w": 10,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": null
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_311": {
+    "power": {
+      "wired_max_w": 22,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Huawei SuperCharge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_314": {
+    "power": {
+      "wired_max_w": 40,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Huawei SuperCharge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_318": {
+    "power": {
+      "wired_max_w": 10,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": null
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_321": {
+    "power": {
+      "wired_max_w": 10,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": null
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_322": {
+    "power": {
+      "wired_max_w": 10,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": null
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_323": {
+    "power": {
+      "wired_max_w": 10,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": null
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_340": {
+    "power": {
+      "wired_max_w": 10,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": null
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_341": {
+    "power": {
+      "wired_max_w": 5,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": null
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_342": {
+    "power": {
+      "wired_max_w": 10,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": null
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_345": {
+    "power": {
+      "wired_max_w": 5,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": null
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_346": {
+    "power": {
+      "wired_max_w": 22,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Huawei SuperCharge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_376": {
+    "power": {
+      "wired_max_w": 10,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": null
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_393": {
+    "power": {
+      "wired_max_w": 22,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Huawei SuperCharge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_470": {
+    "power": {
+      "wired_max_w": 66,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Honor SuperCharge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_498": {
+    "power": {
+      "wired_max_w": 22,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Honor SuperCharge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_504": {
+    "power": {
+      "wired_max_w": 40,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Honor SuperCharge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_505": {
+    "power": {
+      "wired_max_w": 22,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Honor SuperCharge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_508": {
+    "power": {
+      "wired_max_w": 66,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Honor SuperCharge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_518": {
+    "power": {
+      "wired_max_w": 22,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Honor SuperCharge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_536": {
+    "power": {
+      "wired_max_w": 35,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Honor SuperCharge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_537": {
+    "power": {
+      "wired_max_w": 22,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Honor SuperCharge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_539": {
+    "power": {
+      "wired_max_w": 22,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Honor SuperCharge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_552": {
+    "power": {
+      "wired_max_w": 22,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Honor SuperCharge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_564": {
+    "power": {
+      "wired_max_w": 66,
+      "wireless_max_w": 50,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Honor SuperCharge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_592": {
+    "power": {
+      "wired_max_w": 35,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Honor SuperCharge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_594": {
+    "power": {
+      "wired_max_w": 66,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Honor SuperCharge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_595": {
+    "power": {
+      "wired_max_w": 66,
+      "wireless_max_w": 50,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Honor SuperCharge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_619": {
+    "power": {
+      "wired_max_w": 22,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Honor SuperCharge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_639": {
+    "power": {
+      "wired_max_w": 35,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Honor SuperCharge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_640": {
+    "power": {
+      "wired_max_w": 35,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Honor SuperCharge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_714": {
+    "power": {
+      "wired_max_w": 66,
+      "wireless_max_w": 50,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Honor SuperCharge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_724": {
+    "power": {
+      "wired_max_w": 35,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Honor SuperCharge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_725": {
+    "power": {
+      "wired_max_w": 35,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Honor SuperCharge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_726": {
+    "power": {
+      "wired_max_w": 66,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Honor SuperCharge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_727": {
+    "power": {
+      "wired_max_w": 100,
+      "wireless_max_w": 66,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Honor SuperCharge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_728": {
+    "power": {
+      "wired_max_w": 22,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Honor SuperCharge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_735": {
+    "power": {
+      "wired_max_w": 66,
+      "wireless_max_w": 50,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Honor SuperCharge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_759": {
+    "power": {
+      "wired_max_w": 35,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Honor SuperCharge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_760": {
+    "power": {
+      "wired_max_w": 80,
+      "wireless_max_w": 66,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Honor SuperCharge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_987": {
+    "power": {
+      "wired_max_w": 35,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Honor SuperCharge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_1019": {
+    "power": {
+      "wired_max_w": 35,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Honor SuperCharge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_1020": {
+    "power": {
+      "wired_max_w": 66,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Honor SuperCharge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_1035": {
+    "power": {
+      "wired_max_w": 100,
+      "wireless_max_w": 66,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Honor SuperCharge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_1057": {
+    "power": {
+      "wired_max_w": 100,
+      "wireless_max_w": 66,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Honor SuperCharge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_1076": {
+    "power": {
+      "wired_max_w": 35,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Honor SuperCharge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_1083": {
+    "power": {
+      "wired_max_w": 100,
+      "wireless_max_w": 80,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Honor SuperCharge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_1092": {
+    "power": {
+      "wired_max_w": 22,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Honor SuperCharge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_1126": {
+    "power": {
+      "wired_max_w": 100,
+      "wireless_max_w": 80,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Honor SuperCharge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_1153": {
+    "power": {
+      "wired_max_w": 35,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Honor SuperCharge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_1154": {
+    "power": {
+      "wired_max_w": 66,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Honor SuperCharge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_1155": {
+    "power": {
+      "wired_max_w": 100,
+      "wireless_max_w": 66,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Honor SuperCharge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_50": {
+    "power": {
+      "wired_max_w": 20,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Dash Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_52": {
+    "power": {
+      "wired_max_w": 20,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Dash Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_53": {
+    "power": {
+      "wired_max_w": 20,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Dash Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_195": {
+    "power": {
+      "wired_max_w": 20,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Warp Charge 20"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_228": {
+    "power": {
+      "wired_max_w": 20,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Warp Charge 20"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_285": {
+    "power": {
+      "wired_max_w": 20,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Warp Charge 20"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_286": {
+    "power": {
+      "wired_max_w": 30,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Warp Charge 30"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_296": {
+    "power": {
+      "wired_max_w": 30,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Warp Charge 30T"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_297": {
+    "power": {
+      "wired_max_w": 30,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Warp Charge 30T"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_319": {
+    "power": {
+      "wired_max_w": 30,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Warp Charge 30T"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_320": {
+    "power": {
+      "wired_max_w": 30,
+      "wireless_max_w": 30,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Warp Charge 30"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_370": {
+    "power": {
+      "wired_max_w": 30,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Warp Charge 30T"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_377": {
+    "power": {
+      "wired_max_w": 65,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Warp Charge 65"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_400": {
+    "power": {
+      "wired_max_w": 18,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Warp Charge 18"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_402": {
+    "power": {
+      "wired_max_w": 18,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Warp Charge 18"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_424": {
+    "power": {
+      "wired_max_w": 65,
+      "wireless_max_w": 50,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Warp Charge 65T"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_425": {
+    "power": {
+      "wired_max_w": 65,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Warp Charge 65T"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_437": {
+    "power": {
+      "wired_max_w": 30,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Warp Charge 30T"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_439": {
+    "power": {
+      "wired_max_w": 65,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Warp Charge 65"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_488": {
+    "power": {
+      "wired_max_w": 80,
+      "wireless_max_w": 50,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "SUPERVOOC 80W"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_491": {
+    "power": {
+      "wired_max_w": 65,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "SUPERVOOC 65W"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_492": {
+    "power": {
+      "wired_max_w": 33,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "SUPERVOOC 33W"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_493": {
+    "power": {
+      "wired_max_w": 80,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "SUPERVOOC 80W"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_506": {
+    "power": {
+      "wired_max_w": 150,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "SUPERVOOC 150W"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_530": {
+    "power": {
+      "wired_max_w": 100,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "SUPERVOOC 100W"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_551": {
+    "power": {
+      "wired_max_w": 67,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "SUPERVOOC 67W"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_596": {
+    "power": {
+      "wired_max_w": 80,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "SUPERVOOC 80W"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_647": {
+    "power": {
+      "wired_max_w": 100,
+      "wireless_max_w": 50,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "SUPERVOOC 100W"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_651": {
+    "power": {
+      "wired_max_w": 100,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "SUPERVOOC 100W"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_652": {
+    "power": {
+      "wired_max_w": 67,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "SUPERVOOC 67W"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_717": {
+    "power": {
+      "wired_max_w": 67,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "SUPERVOOC 67W"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_732": {
+    "power": {
+      "wired_max_w": 100,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "SUPERVOOC 100W"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_973": {
+    "power": {
+      "wired_max_w": 100,
+      "wireless_max_w": 50,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "SUPERVOOC 100W"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_982": {
+    "power": {
+      "wired_max_w": 100,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "SUPERVOOC 100W"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_1059": {
+    "power": {
+      "wired_max_w": 100,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "SUPERVOOC 100W"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_1060": {
+    "power": {
+      "wired_max_w": 80,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "SUPERVOOC 80W"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_1064": {
+    "power": {
+      "wired_max_w": 67,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "SUPERVOOC 67W"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_1084": {
+    "power": {
+      "wired_max_w": 100,
+      "wireless_max_w": 50,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "SUPERVOOC 100W"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_1125": {
+    "power": {
+      "wired_max_w": 80,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "SUPERVOOC 80W"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_326": {
+    "power": {
+      "wired_max_w": 50,
+      "wireless_max_w": 30,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Mi Turbo Charge 50W"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_327": {
+    "power": {
+      "wired_max_w": 30,
+      "wireless_max_w": 30,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Mi Turbo Charge 30W"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_328": {
+    "power": {
+      "wired_max_w": 18,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Mi Fast Charge 18W"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_329": {
+    "power": {
+      "wired_max_w": 18,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Mi Fast Charge 18W"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_330": {
+    "power": {
+      "wired_max_w": 10,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": null
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_331": {
+    "power": {
+      "wired_max_w": 18,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Mi Fast Charge 18W"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_332": {
+    "power": {
+      "wired_max_w": 18,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Mi Fast Charge 18W"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_333": {
+    "power": {
+      "wired_max_w": 18,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Mi Fast Charge 18W"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_334": {
+    "power": {
+      "wired_max_w": 18,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Mi Fast Charge 18W"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_335": {
+    "power": {
+      "wired_max_w": 18,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Mi Fast Charge 18W"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_336": {
+    "power": {
+      "wired_max_w": 30,
+      "wireless_max_w": 30,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Mi Turbo Charge 30W"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_337": {
+    "power": {
+      "wired_max_w": 18,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Mi Fast Charge 18W"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_338": {
+    "power": {
+      "wired_max_w": 30,
+      "wireless_max_w": 30,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Mi Turbo Charge 30W"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_339": {
+    "power": {
+      "wired_max_w": 10,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": null
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_372": {
+    "power": {
+      "wired_max_w": 20,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Mi Fast Charge 20W"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_373": {
+    "power": {
+      "wired_max_w": 30,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Mi Fast Charge 30W"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_385": {
+    "power": {
+      "wired_max_w": 33,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Mi Fast Charge 33W"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_386": {
+    "power": {
+      "wired_max_w": 22,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Mi Fast Charge 22W"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_387": {
+    "power": {
+      "wired_max_w": 18,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Mi Fast Charge 18W"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_388": {
+    "power": {
+      "wired_max_w": 10,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": null
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_395": {
+    "power": {
+      "wired_max_w": 33,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Mi Fast Charge 33W"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_398": {
+    "power": {
+      "wired_max_w": 33,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Mi Fast Charge 33W"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_427": {
+    "power": {
+      "wired_max_w": 18,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Mi Fast Charge 18W"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_428": {
+    "power": {
+      "wired_max_w": 18,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Mi Fast Charge 18W"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_430": {
+    "power": {
+      "wired_max_w": 55,
+      "wireless_max_w": 50,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Mi Turbo Charge 55W"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_433": {
+    "power": {
+      "wired_max_w": 67,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Mi Turbo Charge 67W"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_434": {
+    "power": {
+      "wired_max_w": 33,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Mi Fast Charge 33W"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_438": {
+    "power": {
+      "wired_max_w": 10,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": null
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_440": {
+    "power": {
+      "wired_max_w": 67,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Mi Turbo Charge 67W"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_441": {
+    "power": {
+      "wired_max_w": 18,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Mi Fast Charge 18W"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_471": {
+    "power": {
+      "wired_max_w": 67,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Mi Turbo Charge 67W"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_472": {
+    "power": {
+      "wired_max_w": 33,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Mi Fast Charge 33W"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_486": {
+    "power": {
+      "wired_max_w": 67,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Mi Turbo Charge 67W"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_487": {
+    "power": {
+      "wired_max_w": 33,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Mi Fast Charge 33W"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_500": {
+    "power": {
+      "wired_max_w": 120,
+      "wireless_max_w": 50,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Xiaomi HyperCharge 120W"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_501": {
+    "power": {
+      "wired_max_w": 67,
+      "wireless_max_w": 50,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Xiaomi HyperCharge 67W"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_502": {
+    "power": {
+      "wired_max_w": 67,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Xiaomi HyperCharge 67W"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_503": {
+    "power": {
+      "wired_max_w": 18,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Mi Fast Charge 18W"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_507": {
+    "power": {
+      "wired_max_w": 18,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Mi Fast Charge 18W"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_517": {
+    "power": {
+      "wired_max_w": 120,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Xiaomi HyperCharge 120W"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_533": {
+    "power": {
+      "wired_max_w": 120,
+      "wireless_max_w": 50,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Xiaomi HyperCharge 120W"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_534": {
+    "power": {
+      "wired_max_w": 67,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Xiaomi HyperCharge 67W"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_535": {
+    "power": {
+      "wired_max_w": 67,
+      "wireless_max_w": 50,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Xiaomi HyperCharge 67W"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_543": {
+    "power": {
+      "wired_max_w": 33,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Mi Fast Charge 33W"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_558": {
+    "power": {
+      "wired_max_w": 18,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Mi Fast Charge 18W"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_567": {
+    "power": {
+      "wired_max_w": 67,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Xiaomi HyperCharge 67W"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_568": {
+    "power": {
+      "wired_max_w": 33,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Mi Fast Charge 33W"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_569": {
+    "power": {
+      "wired_max_w": 33,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Mi Fast Charge 33W"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_571": {
+    "power": {
+      "wired_max_w": 120,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Xiaomi HyperCharge 120W"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_609": {
+    "power": {
+      "wired_max_w": 120,
+      "wireless_max_w": 50,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Xiaomi HyperCharge 120W"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_612": {
+    "power": {
+      "wired_max_w": 10,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": null
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_629": {
+    "power": {
+      "wired_max_w": 33,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Mi Fast Charge 33W"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_631": {
+    "power": {
+      "wired_max_w": 120,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Xiaomi HyperCharge 120W"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_632": {
+    "power": {
+      "wired_max_w": 120,
+      "wireless_max_w": 50,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Xiaomi HyperCharge 120W"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_706": {
+    "power": {
+      "wired_max_w": 18,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Mi Fast Charge 18W"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_231": {
+    "power": {
+      "wired_max_w": 18,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Qualcomm Quick Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_232": {
+    "power": {
+      "wired_max_w": 18,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Qualcomm Quick Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_233": {
+    "power": {
+      "wired_max_w": 10,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": null
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_235": {
+    "power": {
+      "wired_max_w": 18,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Qualcomm Quick Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_237": {
+    "power": {
+      "wired_max_w": 10,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": null
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_274": {
+    "power": {
+      "wired_max_w": 10,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": null
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_406": {
+    "power": {
+      "wired_max_w": 18,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Qualcomm Quick Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_407": {
+    "power": {
+      "wired_max_w": 10,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": null
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_408": {
+    "power": {
+      "wired_max_w": 18,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Qualcomm Quick Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_409": {
+    "power": {
+      "wired_max_w": 10,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": null
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_432": {
+    "power": {
+      "wired_max_w": 10,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": null
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_435": {
+    "power": {
+      "wired_max_w": 18,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Qualcomm Quick Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_436": {
+    "power": {
+      "wired_max_w": 18,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Qualcomm Quick Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_473": {
+    "power": {
+      "wired_max_w": 18,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Qualcomm Quick Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_474": {
+    "power": {
+      "wired_max_w": 10,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": null
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_475": {
+    "power": {
+      "wired_max_w": 18,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Qualcomm Quick Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_514": {
+    "power": {
+      "wired_max_w": 20,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Qualcomm Quick Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_515": {
+    "power": {
+      "wired_max_w": 33,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Qualcomm Quick Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_516": {
+    "power": {
+      "wired_max_w": 10,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": null
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_550": {
+    "power": {
+      "wired_max_w": 20,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Qualcomm Quick Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_563": {
+    "power": {
+      "wired_max_w": 33,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Qualcomm Quick Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_597": {
+    "power": {
+      "wired_max_w": 10,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": null
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_598": {
+    "power": {
+      "wired_max_w": 20,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Qualcomm Quick Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_787": {
+    "power": {
+      "wired_max_w": 15,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": null
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_789": {
+    "power": {
+      "wired_max_w": 15,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": null
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_414": {
+    "power": {
+      "wired_max_w": 21,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Qualcomm Quick Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_415": {
+    "power": {
+      "wired_max_w": 18,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Qualcomm Quick Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_416": {
+    "power": {
+      "wired_max_w": 18,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Qualcomm Quick Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_417": {
+    "power": {
+      "wired_max_w": 18,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Qualcomm Quick Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_418": {
+    "power": {
+      "wired_max_w": 10,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": null
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_419": {
+    "power": {
+      "wired_max_w": 21,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Qualcomm Quick Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_420": {
+    "power": {
+      "wired_max_w": 18,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Qualcomm Quick Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_421": {
+    "power": {
+      "wired_max_w": 18,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Qualcomm Quick Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_445": {
+    "power": {
+      "wired_max_w": 30,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Qualcomm Quick Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_476": {
+    "power": {
+      "wired_max_w": 30,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Qualcomm Quick Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_477": {
+    "power": {
+      "wired_max_w": 30,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Qualcomm Quick Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_626": {
+    "power": {
+      "wired_max_w": 30,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Qualcomm Quick Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_627": {
+    "power": {
+      "wired_max_w": 30,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Qualcomm Quick Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_638": {
+    "power": {
+      "wired_max_w": 30,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Qualcomm Quick Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_1050": {
+    "power": {
+      "wired_max_w": 30,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Qualcomm Quick Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_762": {
+    "power": {
+      "wired_max_w": 30,
+      "wireless_max_w": 23,
+      "wireless_protocol": "Qi2",
+      "fast_charge_tech": "Google USB-PD"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_763": {
+    "power": {
+      "wired_max_w": 30,
+      "wireless_max_w": 23,
+      "wireless_protocol": "Qi2",
+      "fast_charge_tech": "Google USB-PD"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_764": {
+    "power": {
+      "wired_max_w": 30,
+      "wireless_max_w": 23,
+      "wireless_protocol": "Qi2",
+      "fast_charge_tech": "Google USB-PD"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_765": {
+    "power": {
+      "wired_max_w": 27,
+      "wireless_max_w": 12,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Google USB-PD"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_766": {
+    "power": {
+      "wired_max_w": 27,
+      "wireless_max_w": 12,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Google USB-PD"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_767": {
+    "power": {
+      "wired_max_w": 18,
+      "wireless_max_w": 12,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Google USB-PD"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_768": {
+    "power": {
+      "wired_max_w": 30,
+      "wireless_max_w": 23,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Google USB-PD"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_769": {
+    "power": {
+      "wired_max_w": 20,
+      "wireless_max_w": 12,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Google USB-PD"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_770": {
+    "power": {
+      "wired_max_w": 18,
+      "wireless_max_w": 12,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Google USB-PD"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_1021": {
+    "power": {
+      "wired_max_w": 23,
+      "wireless_max_w": 7.5,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Google USB-PD"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_1040": {
+    "power": {
+      "wired_max_w": 30,
+      "wireless_max_w": 23,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Google USB-PD"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_1072": {
+    "power": {
+      "wired_max_w": 45,
+      "wireless_max_w": 23,
+      "wireless_protocol": "Qi2",
+      "fast_charge_tech": "Google USB-PD"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_1073": {
+    "power": {
+      "wired_max_w": 45,
+      "wireless_max_w": 23,
+      "wireless_protocol": "Qi2",
+      "fast_charge_tech": "Google USB-PD"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_1074": {
+    "power": {
+      "wired_max_w": 27,
+      "wireless_max_w": 12,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Google USB-PD"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_1139": {
+    "power": {
+      "wired_max_w": 23,
+      "wireless_max_w": 7.5,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Google USB-PD"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_554": {
+    "power": {
+      "wired_max_w": 15,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "TurboPower 15"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_555": {
+    "power": {
+      "wired_max_w": 30,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "TurboPower 30"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_556": {
+    "power": {
+      "wired_max_w": 30,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "TurboPower 30"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_565": {
+    "power": {
+      "wired_max_w": 15,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "TurboPower 15"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_566": {
+    "power": {
+      "wired_max_w": 20,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "TurboPower 20"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_585": {
+    "power": {
+      "wired_max_w": 10,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": null
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_586": {
+    "power": {
+      "wired_max_w": 20,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "TurboPower 20"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_587": {
+    "power": {
+      "wired_max_w": 10,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": null
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_588": {
+    "power": {
+      "wired_max_w": 15,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "TurboPower 15"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_589": {
+    "power": {
+      "wired_max_w": 18,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "TurboPower 18"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_593": {
+    "power": {
+      "wired_max_w": 10,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": null
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_620": {
+    "power": {
+      "wired_max_w": 10,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": null
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_621": {
+    "power": {
+      "wired_max_w": 15,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "TurboPower 15"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_622": {
+    "power": {
+      "wired_max_w": 33,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "TurboPower 33"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_623": {
+    "power": {
+      "wired_max_w": 33,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "TurboPower 33"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_624": {
+    "power": {
+      "wired_max_w": 68,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "TurboPower 68"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_645": {
+    "power": {
+      "wired_max_w": 10,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": null
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_646": {
+    "power": {
+      "wired_max_w": 30,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "TurboPower 30"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_664": {
+    "power": {
+      "wired_max_w": 15,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "TurboPower 15"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_737": {
+    "power": {
+      "wired_max_w": 10,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": null
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_756": {
+    "power": {
+      "wired_max_w": 33,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "TurboPower 33"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_757": {
+    "power": {
+      "wired_max_w": 15,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "TurboPower 15"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_758": {
+    "power": {
+      "wired_max_w": 68,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "TurboPower 68"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_979": {
+    "power": {
+      "wired_max_w": 10,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": null
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_980": {
+    "power": {
+      "wired_max_w": 15,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "TurboPower 15"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_981": {
+    "power": {
+      "wired_max_w": 10,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": null
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_1025": {
+    "power": {
+      "wired_max_w": 68,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "TurboPower 68"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_1029": {
+    "power": {
+      "wired_max_w": 68,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "TurboPower 68"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_1030": {
+    "power": {
+      "wired_max_w": 33,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "TurboPower 33"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_1036": {
+    "power": {
+      "wired_max_w": 68,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "TurboPower 68"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_1037": {
+    "power": {
+      "wired_max_w": 68,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "TurboPower 68"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_1038": {
+    "power": {
+      "wired_max_w": 125,
+      "wireless_max_w": 50,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "TurboPower 125"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_1039": {
+    "power": {
+      "wired_max_w": 68,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "TurboPower 68"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_1044": {
+    "power": {
+      "wired_max_w": 125,
+      "wireless_max_w": 50,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "TurboPower 125"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_1070": {
+    "power": {
+      "wired_max_w": 30,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "TurboPower 30"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_1071": {
+    "power": {
+      "wired_max_w": 68,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "TurboPower 68"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_1141": {
+    "power": {
+      "wired_max_w": 33,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "TurboPower 33"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_1142": {
+    "power": {
+      "wired_max_w": 33,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "TurboPower 33"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_1143": {
+    "power": {
+      "wired_max_w": 10,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": null
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_1144": {
+    "power": {
+      "wired_max_w": 15,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "TurboPower 15"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_1145": {
+    "power": {
+      "wired_max_w": 68,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "TurboPower 68"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_1146": {
+    "power": {
+      "wired_max_w": 68,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "TurboPower 68"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_1147": {
+    "power": {
+      "wired_max_w": 15,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "TurboPower 15"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_1148": {
+    "power": {
+      "wired_max_w": 30,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "TurboPower 30"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_559": {
+    "power": {
+      "wired_max_w": 10,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": null
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_560": {
+    "power": {
+      "wired_max_w": 33,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "OPPO VOOC Flash Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_570": {
+    "power": {
+      "wired_max_w": 33,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "OPPO VOOC Flash Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_590": {
+    "power": {
+      "wired_max_w": 65,
+      "wireless_max_w": 30,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "OPPO SuperVOOC"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_591": {
+    "power": {
+      "wired_max_w": 80,
+      "wireless_max_w": 30,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "OPPO SuperVOOC"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_625": {
+    "power": {
+      "wired_max_w": 33,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "OPPO VOOC Flash Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_707": {
+    "power": {
+      "wired_max_w": 67,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "OPPO SuperVOOC"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_709": {
+    "power": {
+      "wired_max_w": 33,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "OPPO VOOC Flash Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_710": {
+    "power": {
+      "wired_max_w": 33,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "OPPO VOOC Flash Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_974": {
+    "power": {
+      "wired_max_w": 45,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "OPPO SuperVOOC"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_975": {
+    "power": {
+      "wired_max_w": 33,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "OPPO VOOC Flash Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_1041": {
+    "power": {
+      "wired_max_w": 67,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "OPPO SuperVOOC"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_497": {
+    "power": {
+      "wired_max_w": 33,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "realme Dart Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_616": {
+    "power": {
+      "wired_max_w": 45,
+      "wireless_max_w": 5,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Nothing Fast Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_617": {
+    "power": {
+      "wired_max_w": 33,
+      "wireless_max_w": 5,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Nothing Fast Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_1016": {
+    "power": {
+      "wired_max_w": 45,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Nothing Fast Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_1017": {
+    "power": {
+      "wired_max_w": 50,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Nothing Fast Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_1132": {
+    "power": {
+      "wired_max_w": 33,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Nothing Fast Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_1133": {
+    "power": {
+      "wired_max_w": 65,
+      "wireless_max_w": 15,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Nothing Fast Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_1140": {
+    "power": {
+      "wired_max_w": 45,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Nothing Fast Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_734": {
+    "power": {
+      "wired_max_w": 15,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": null
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_739": {
+    "power": {
+      "wired_max_w": 33,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Qualcomm Quick Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_1012": {
+    "power": {
+      "wired_max_w": 33,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Qualcomm Quick Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_350": {
+    "power": {
+      "wired_max_w": 20,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "USB-PD"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_354": {
+    "power": {
+      "wired_max_w": 30,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "USB-PD"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_355": {
+    "power": {
+      "wired_max_w": 20,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "USB-PD"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_356": {
+    "power": {
+      "wired_max_w": 30,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "USB-PD"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_357": {
+    "power": {
+      "wired_max_w": 30,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "USB-PD"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_358": {
+    "power": {
+      "wired_max_w": 12,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "USB-PD"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_446": {
+    "power": {
+      "wired_max_w": 30,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "USB-PD"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_447": {
+    "power": {
+      "wired_max_w": 30,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "USB-PD"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_448": {
+    "power": {
+      "wired_max_w": 30,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "USB-PD"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_650": {
+    "power": {
+      "wired_max_w": 30,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "USB-PD"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_713": {
+    "power": {
+      "wired_max_w": 30,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "USB-PD"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_716": {
+    "power": {
+      "wired_max_w": 30,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "USB-PD"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_1013": {
+    "power": {
+      "wired_max_w": 30,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "USB-PD"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_1014": {
+    "power": {
+      "wired_max_w": 30,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "USB-PD"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_1015": {
+    "power": {
+      "wired_max_w": 30,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "USB-PD"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_1024": {
+    "power": {
+      "wired_max_w": 20,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "USB-PD"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_1026": {
+    "power": {
+      "wired_max_w": 30,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "USB-PD"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_1028": {
+    "power": {
+      "wired_max_w": 30,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "USB-PD"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_1135": {
+    "power": {
+      "wired_max_w": 30,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "USB-PD"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_1136": {
+    "power": {
+      "wired_max_w": 30,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "USB-PD"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_1137": {
+    "power": {
+      "wired_max_w": 30,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "USB-PD"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_1138": {
+    "power": {
+      "wired_max_w": 30,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "USB-PD"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_548": {
+    "power": {
+      "wired_max_w": 15,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Adaptive Fast Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_654": {
+    "power": {
+      "wired_max_w": 15,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Adaptive Fast Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_655": {
+    "power": {
+      "wired_max_w": 45,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Super Fast Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_656": {
+    "power": {
+      "wired_max_w": 25,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Super Fast Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_657": {
+    "power": {
+      "wired_max_w": 45,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Super Fast Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_658": {
+    "power": {
+      "wired_max_w": 45,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Super Fast Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_659": {
+    "power": {
+      "wired_max_w": 45,
+      "wireless_max_w": 15,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Super Fast Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_660": {
+    "power": {
+      "wired_max_w": 45,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Super Fast Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_661": {
+    "power": {
+      "wired_max_w": 45,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Super Fast Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_662": {
+    "power": {
+      "wired_max_w": 45,
+      "wireless_max_w": 15,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Super Fast Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_675": {
+    "power": {
+      "wired_max_w": 45,
+      "wireless_max_w": 15,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Super Fast Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_676": {
+    "power": {
+      "wired_max_w": 45,
+      "wireless_max_w": 15,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Super Fast Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_677": {
+    "power": {
+      "wired_max_w": 45,
+      "wireless_max_w": 15,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Super Fast Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_771": {
+    "power": {
+      "wired_max_w": 45,
+      "wireless_max_w": 15,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Super Fast Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_772": {
+    "power": {
+      "wired_max_w": 45,
+      "wireless_max_w": 15,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Super Fast Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_1042": {
+    "power": {
+      "wired_max_w": 45,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Super Fast Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_1043": {
+    "power": {
+      "wired_max_w": 45,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Super Fast Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_1080": {
+    "power": {
+      "wired_max_w": 45,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Super Fast Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_1098": {
+    "power": {
+      "wired_max_w": 45,
+      "wireless_max_w": 15,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Super Fast Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_1099": {
+    "power": {
+      "wired_max_w": 45,
+      "wireless_max_w": 15,
+      "wireless_protocol": "Qi",
+      "fast_charge_tech": "Super Fast Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_1149": {
+    "power": {
+      "wired_max_w": 25,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Super Fast Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_1150": {
+    "power": {
+      "wired_max_w": 25,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "Super Fast Charge"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_775": {
+    "power": {
+      "wired_max_w": 67,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "SUPERVOOC 67W"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_776": {
+    "power": {
+      "wired_max_w": 33,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "SUPERVOOC 33W"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_777": {
+    "power": {
+      "wired_max_w": 67,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "SUPERVOOC 67W"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_1081": {
+    "power": {
+      "wired_max_w": 67,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "SUPERVOOC 67W"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_779": {
+    "power": {
+      "wired_max_w": 15,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": null
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_780": {
+    "power": {
+      "wired_max_w": 20,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": null
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_781": {
+    "power": {
+      "wired_max_w": 20,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": null
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_782": {
+    "power": {
+      "wired_max_w": 20,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": null
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_783": {
+    "power": {
+      "wired_max_w": 68,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "TurboPower 68"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_784": {
+    "power": {
+      "wired_max_w": 68,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "TurboPower 68"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_785": {
+    "power": {
+      "wired_max_w": 20,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": null
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_786": {
+    "power": {
+      "wired_max_w": 30,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": null
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_1045": {
+    "power": {
+      "wired_max_w": 68,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "TurboPower 68"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_1046": {
+    "power": {
+      "wired_max_w": 20,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": null
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_1047": {
+    "power": {
+      "wired_max_w": 15,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": null
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_1048": {
+    "power": {
+      "wired_max_w": 20,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": null
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_1049": {
+    "power": {
+      "wired_max_w": 68,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": "TurboPower 68"
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_1077": {
+    "power": {
+      "wired_max_w": 20,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": null
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_1078": {
+    "power": {
+      "wired_max_w": 15,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": null
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_1079": {
+    "power": {
+      "wired_max_w": 20,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": null
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_1082": {
+    "power": {
+      "wired_max_w": 20,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": null
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_1091": {
+    "power": {
+      "wired_max_w": 20,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": null
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_1093": {
+    "power": {
+      "wired_max_w": 45,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": null
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  },
+  "model_1094": {
+    "power": {
+      "wired_max_w": 45,
+      "wireless_max_w": null,
+      "wireless_protocol": null,
+      "fast_charge_tech": null
+    },
+    "fetched_at": "2026-06-04T07:25:39.717537"
+  }
+}
