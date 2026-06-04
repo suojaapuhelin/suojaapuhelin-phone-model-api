@@ -111,7 +111,7 @@ function enrichChargingDataWithAI($modelName) {
     }
 
     $payload = [
-        'model' => 'gpt-5.5-mini',
+    'model' => 'gpt-4.1-mini',
         'tools' => [
             ['type' => 'web_search']
         ],
