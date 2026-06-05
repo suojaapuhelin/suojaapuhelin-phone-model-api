@@ -264,9 +264,18 @@ foreach ($allCategories as $cat) {
      * Näin pois jäävät esim:
      * Apple → iPhone 11 Pro → iPhone 11 Pro laturit ja kaapelit
      */
-    if ((int) $cat['parent_id'] !== (int) $brand['id']) {
-        continue;
-    }
+    $nameLower = mb_strtolower($cat['name']);
+
+if (
+    str_contains($nameLower, 'laturit') ||
+    str_contains($nameLower, 'kaapelit') ||
+    str_contains($nameLower, 'latauskaapelit') ||
+    str_contains($nameLower, 'panssarilasit') ||
+    str_contains($nameLower, 'suojakuoret') ||
+    str_contains($nameLower, 'suojakotelot')
+) {
+    continue;
+}
 
     $modelKey = 'model_' . $cat['id'];
     $cached = $chargerCache[$modelKey] ?? null;
