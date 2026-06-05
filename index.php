@@ -6,6 +6,16 @@ header('Access-Control-Allow-Origin: *');
 $path = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 
 /**
+ * Mukaan otettavat juurituoteryhmät:
+ * 248 = Puhelimen suojat
+ * 348 = Tabletin suojat
+ */
+$ALLOWED_ROOT_IDS = [
+    248,
+    348
+];
+
+/**
  * Lataa paikallinen charger_cache.json.
  * Tiedoston pitää olla samassa GitHub-repossa kuin index.php.
  */
@@ -20,6 +30,88 @@ function loadChargerCache() {
     $data = json_decode($json, true);
 
     return is_array($data) ? $data : [];
+}
+
+/**
+ * Tarkistaa onko tuoteryhmä näkyvissä.
+ * MyCashflow API:n kentät voivat vaihdella, joten tarkistus on varovainen.
+ */
+function isVisibleCategory($cat) {
+    if (isset($cat['visible']) && !$cat['visible']) {
+        return false;
+    }
+
+    if (isset($cat['hidden']) && $cat['hidden']) {
+        return false;
+    }
+
+    if (isset($cat['status']) && in_array($cat['status'], ['hidden', 'disabled', 'archived'])) {
+        return false;
+    }
+
+    return true;
+}
+
+/**
+ * Tarkistaa kuuluuko tuoteryhmä tietyn juurituoteryhmän alle.
+ */
+function isDescendantOf($categoryId, $rootId, $categoriesById) {
+    $currentId = $categoryId;
+
+    while (isset($categoriesById[$currentId])) {
+        $parentId = $categoriesById[$currentId]['parent_id'] ?? 0;
+
+        if ((int) $parentId === (int) $rootId) {
+            return true;
+        }
+
+        if (!$parentId || (int) $parentId === 0) {
+            return false;
+        }
+
+        $currentId = $parentId;
+    }
+
+    return false;
+}
+
+/**
+ * Hakee merkkituoteryhmän juurituoteryhmän alta.
+ * Esim. Puhelimen suojat → Samsung → Galaxy S24
+ * palauttaa Samsung.
+ */
+function getTopBrandUnderRoot($categoryId, $rootId, $categoriesById) {
+    $currentId = $categoryId;
+
+    while (isset($categoriesById[$currentId])) {
+        $cat = $categoriesById[$currentId];
+        $parentId = $cat['parent_id'] ?? 0;
+
+        if ((int) $parentId === (int) $rootId) {
+            return $cat;
+        }
+
+        if (!$parentId || (int) $parentId === 0) {
+            return null;
+        }
+
+        $currentId = $parentId;
+    }
+
+    return null;
+}
+
+/**
+ * Selvittää minkä sallitun juuren alla tuoteryhmä on.
+ */
+function getMatchedRootId($categoryId, $allowedRootIds, $categoriesById) {
+    foreach ($allowedRootIds as $rootId) {
+        if (isDescendantOf($categoryId, $rootId, $categoriesById)) {
+            return $rootId;
+        }
+    }
+
+    return null;
 }
 
 /**
@@ -55,7 +147,7 @@ function getRecommendedMinWatts($wiredMaxW) {
         return 45;
     }
 
-    if ($wiredMaxW <= 65 || $wiredMaxW <= 67) {
+    if ($wiredMaxW <= 67) {
         return 65;
     }
 
@@ -147,7 +239,9 @@ $key = getenv('MCF_API_KEY');
 
 $chargerCache = loadChargerCache();
 
-$all = [];
+$allCategories = [];
+$categoriesById = [];
+
 $page = 1;
 $pageSize = 100;
 
@@ -181,46 +275,82 @@ do {
     $json = json_decode($response, true);
 
     foreach ($json['data'] ?? [] as $cat) {
-        $template = $cat['template'] ?? '';
-
-        if (!str_starts_with($template, 'category/')) {
-            continue;
-        }
-
-        if (!preg_match('/(usb-c|lightning|micro-usb|magsafe)/', $template)) {
-            continue;
-        }
-
-        $modelKey = 'model_' . $cat['id'];
-        $cached = $chargerCache[$modelKey] ?? null;
-        $power = $cached['power'] ?? null;
-
-        if ($power && isset($power['wired_max_w'])) {
-            $power['recommended_min_watts'] = getRecommendedMinWatts($power['wired_max_w']);
-        }
-
-        $all[] = [
-            'id' => $cat['id'],
-            'name' => $cat['name'],
-            'url' => '/category/' . $cat['id'],
-            'parent_id' => $cat['parent_id'],
-            'template' => $template,
-            'charging' => [
-                'usb_c' => str_contains($template, 'usb-c'),
-                'lightning' => str_contains($template, 'lightning'),
-                'micro_usb' => str_contains($template, 'micro-usb'),
-                'magsafe' => str_contains($template, 'magsafe')
-            ],
-            'power' => $power,
-            'power_source' => $power ? 'charger_cache' : null,
-            'power_fetched_at' => $cached['fetched_at'] ?? null
-        ];
+        $allCategories[] = $cat;
+        $categoriesById[$cat['id']] = $cat;
     }
 
     $pageCount = $json['meta']['page_count'] ?? $page;
     $page++;
 
 } while ($page <= $pageCount);
+
+$all = [];
+
+foreach ($allCategories as $cat) {
+    $template = $cat['template'] ?? '';
+
+    if (!isVisibleCategory($cat)) {
+        continue;
+    }
+
+    $matchedRootId = getMatchedRootId($cat['id'], $ALLOWED_ROOT_IDS, $categoriesById);
+
+    if (!$matchedRootId) {
+        continue;
+    }
+
+    if (!str_starts_with($template, 'category/')) {
+        continue;
+    }
+
+    if (!preg_match('/(usb-c|lightning|micro-usb|magsafe)/', $template)) {
+        continue;
+    }
+
+    $brand = getTopBrandUnderRoot($cat['id'], $matchedRootId, $categoriesById);
+
+    if (!$brand || !isVisibleCategory($brand)) {
+        continue;
+    }
+
+    $modelKey = 'model_' . $cat['id'];
+    $cached = $chargerCache[$modelKey] ?? null;
+    $power = $cached['power'] ?? null;
+
+    if ($power && isset($power['wired_max_w'])) {
+        $power['recommended_min_watts'] = getRecommendedMinWatts($power['wired_max_w']);
+    }
+
+    $all[] = [
+        'id' => $cat['id'],
+        'name' => $cat['name'],
+        'url' => '/category/' . $cat['id'],
+        'parent_id' => $cat['parent_id'],
+        'root_id' => $matchedRootId,
+        'brand_id' => $brand['id'],
+        'brand_name' => $brand['name'],
+        'template' => $template,
+        'charging' => [
+            'usb_c' => str_contains($template, 'usb-c'),
+            'lightning' => str_contains($template, 'lightning'),
+            'micro_usb' => str_contains($template, 'micro-usb'),
+            'magsafe' => str_contains($template, 'magsafe')
+        ],
+        'power' => $power,
+        'power_source' => $power ? 'charger_cache' : null,
+        'power_fetched_at' => $cached['fetched_at'] ?? null
+    ];
+}
+
+usort($all, function ($a, $b) {
+    $brandCompare = strcasecmp($a['brand_name'], $b['brand_name']);
+
+    if ($brandCompare !== 0) {
+        return $brandCompare;
+    }
+
+    return strcasecmp($a['name'], $b['name']);
+});
 
 if ($path === '/models') {
     echo json_encode($all, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
@@ -231,6 +361,7 @@ echo json_encode([
     'status' => 'ok',
     'count' => count($all),
     'models_url' => '/models',
+    'allowed_roots' => $ALLOWED_ROOT_IDS,
     'models' => $all
 ], JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
 
