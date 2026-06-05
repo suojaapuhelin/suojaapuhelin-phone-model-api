@@ -5,20 +5,11 @@ header('Access-Control-Allow-Origin: *');
 
 $path = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 
-/**
- * Mukaan otettavat juurituoteryhmät:
- * 248 = Puhelimen suojat
- * 348 = Tabletin suojat
- */
 $ALLOWED_ROOT_IDS = [
-    248,
-    348
+    248, // Puhelimen suojat
+    348  // Tabletin suojat
 ];
 
-/**
- * Lataa paikallinen charger_cache.json.
- * Tiedoston pitää olla samassa GitHub-repossa kuin index.php.
- */
 function loadChargerCache() {
     $cacheFile = __DIR__ . '/charger_cache.json';
 
@@ -32,10 +23,6 @@ function loadChargerCache() {
     return is_array($data) ? $data : [];
 }
 
-/**
- * Tarkistaa onko tuoteryhmä näkyvissä.
- * MyCashflow API:n kentät voivat vaihdella, joten tarkistus on varovainen.
- */
 function isVisibleCategory($cat) {
     if (isset($cat['visible']) && !$cat['visible']) {
         return false;
@@ -52,9 +39,6 @@ function isVisibleCategory($cat) {
     return true;
 }
 
-/**
- * Tarkistaa kuuluuko tuoteryhmä tietyn juurituoteryhmän alle.
- */
 function isDescendantOf($categoryId, $rootId, $categoriesById) {
     $currentId = $categoryId;
 
@@ -75,11 +59,6 @@ function isDescendantOf($categoryId, $rootId, $categoriesById) {
     return false;
 }
 
-/**
- * Hakee merkkituoteryhmän juurituoteryhmän alta.
- * Esim. Puhelimen suojat → Samsung → Galaxy S24
- * palauttaa Samsung.
- */
 function getTopBrandUnderRoot($categoryId, $rootId, $categoriesById) {
     $currentId = $categoryId;
 
@@ -101,9 +80,6 @@ function getTopBrandUnderRoot($categoryId, $rootId, $categoriesById) {
     return null;
 }
 
-/**
- * Selvittää minkä sallitun juuren alla tuoteryhmä on.
- */
 function getMatchedRootId($categoryId, $allowedRootIds, $categoriesById) {
     foreach ($allowedRootIds as $rootId) {
         if (isDescendantOf($categoryId, $rootId, $categoriesById)) {
@@ -114,54 +90,23 @@ function getMatchedRootId($categoryId, $allowedRootIds, $categoriesById) {
     return null;
 }
 
-/**
- * Pyöristää asiakkaalle näytettävän vähimmäistehon järkeviin portaisiin.
- * Esim. 27W → 25W, 45W → 45W, 66W → 65W.
- */
 function getRecommendedMinWatts($wiredMaxW) {
     if (!$wiredMaxW) {
         return null;
     }
 
-    if ($wiredMaxW <= 10) {
-        return 10;
-    }
-
-    if ($wiredMaxW <= 15) {
-        return 15;
-    }
-
-    if ($wiredMaxW <= 20) {
-        return 20;
-    }
-
-    if ($wiredMaxW <= 27) {
-        return 25;
-    }
-
-    if ($wiredMaxW <= 30) {
-        return 30;
-    }
-
-    if ($wiredMaxW <= 45) {
-        return 45;
-    }
-
-    if ($wiredMaxW <= 67) {
-        return 65;
-    }
-
-    if ($wiredMaxW <= 100) {
-        return 100;
-    }
+    if ($wiredMaxW <= 10) return 10;
+    if ($wiredMaxW <= 15) return 15;
+    if ($wiredMaxW <= 20) return 20;
+    if ($wiredMaxW <= 27) return 25;
+    if ($wiredMaxW <= 30) return 30;
+    if ($wiredMaxW <= 45) return 45;
+    if ($wiredMaxW <= 67) return 65;
+    if ($wiredMaxW <= 100) return 100;
 
     return (int) $wiredMaxW;
 }
 
-/**
- * AI-rikastus yksittäiselle mallille.
- * Käytä tätä vain testaukseen / puuttuviin malleihin.
- */
 function enrichChargingDataWithAI($modelName) {
     $apiKey = getenv('OPENAI_API_KEY');
 
@@ -310,6 +255,16 @@ foreach ($allCategories as $cat) {
     $brand = getTopBrandUnderRoot($cat['id'], $matchedRootId, $categoriesById);
 
     if (!$brand || !isVisibleCategory($brand)) {
+        continue;
+    }
+
+    /**
+     * Tärkeä korjaus:
+     * Ota mukaan vain merkin suorat alatuoteryhmät.
+     * Näin pois jäävät esim:
+     * Apple → iPhone 11 Pro → iPhone 11 Pro laturit ja kaapelit
+     */
+    if ((int) $cat['parent_id'] !== (int) $brand['id']) {
         continue;
     }
 
