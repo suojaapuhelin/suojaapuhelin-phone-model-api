@@ -137,9 +137,16 @@ function enrichChargingDataWithAI($modelName) {
 
 if ($path === '/debug') {
     $key = getenv('ANTHROPIC_API_KEY');
+    $cacheFile = getCacheFile();
+    $dir = dirname($cacheFile);
     echo json_encode([
-        'key_set'     => !empty($key),
-        'key_preview' => $key ? substr($key, 0, 15) . '...' : null
+        'key_set'      => !empty($key),
+        'key_preview'  => $key ? substr($key, 0, 15) . '...' : null,
+        'cache_file'   => $cacheFile,
+        'dir_exists'   => is_dir($dir),
+        'dir_writable' => is_writable($dir),
+        'file_exists'  => file_exists($cacheFile),
+        'cache_count'  => file_exists($cacheFile) ? count(json_decode(file_get_contents($cacheFile), true)) : 0,
     ]);
     exit;
 }
