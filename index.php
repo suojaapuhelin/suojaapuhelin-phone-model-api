@@ -26,7 +26,8 @@ function loadChargerCache() {
 }
 
 function saveChargerCache(array $cache) {
-    file_put_contents(getCacheFile(), json_encode($cache, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT));
+    $result = file_put_contents(getCacheFile(), json_encode($cache, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT));
+    return $result !== false;
 }
 
 function isVisibleCategory($cat) {
@@ -38,7 +39,10 @@ function isVisibleCategory($cat) {
 
 function isDescendantOf($categoryId, $rootId, $categoriesById) {
     $currentId = $categoryId;
+    $visited = [];
     while (isset($categoriesById[$currentId])) {
+        if (isset($visited[$currentId])) break;
+        $visited[$currentId] = true;
         $parentId = $categoriesById[$currentId]['parent_id'] ?? 0;
         if ((int) $parentId === (int) $rootId) return true;
         if (!$parentId || (int) $parentId === 0) return false;
@@ -49,7 +53,10 @@ function isDescendantOf($categoryId, $rootId, $categoriesById) {
 
 function getTopBrandUnderRoot($categoryId, $rootId, $categoriesById) {
     $currentId = $categoryId;
+    $visited = [];
     while (isset($categoriesById[$currentId])) {
+        if (isset($visited[$currentId])) break;
+        $visited[$currentId] = true;
         $cat = $categoriesById[$currentId];
         $parentId = $cat['parent_id'] ?? 0;
         if ((int) $parentId === (int) $rootId) return $cat;
@@ -139,6 +146,7 @@ if ($path === '/debug') {
     $key = getenv('ANTHROPIC_API_KEY');
     $cacheFile = getCacheFile();
     $dir = dirname($cacheFile);
+    $cache = loadChargerCache();
     echo json_encode([
         'key_set'      => !empty($key),
         'key_preview'  => $key ? substr($key, 0, 15) . '...' : null,
@@ -146,7 +154,7 @@ if ($path === '/debug') {
         'dir_exists'   => is_dir($dir),
         'dir_writable' => is_writable($dir),
         'file_exists'  => file_exists($cacheFile),
-        'cache_count'  => file_exists($cacheFile) ? count(json_decode(file_get_contents($cacheFile), true)) : 0,
+        'cache_count'  => count($cache),
     ]);
     exit;
 }
@@ -158,6 +166,11 @@ if ($path === '/enrich') {
         exit;
     }
     $power = enrichChargingDataWithAI($model);
+    if ($power !== null) {
+        $cache = loadChargerCache();
+        $cache['manual_' . md5($model)] = ['power' => $power, 'fetched_at' => date('c')];
+        saveChargerCache($cache);
+    }
     echo json_encode(['model' => $model, 'power' => $power], JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
     exit;
 }
@@ -206,10 +219,11 @@ do {
 
 // ─── Mallilista + automaattinen AI-rikastus (max 3 per kutsu) ────────────────
 
-$all                = [];
-$cacheUpdated       = false;
-$aiCallsThisRequest = 0;
+$all                  = [];
+$cacheUpdated         = false;
+$aiCallsThisRequest   = 0;
 $maxAiCallsPerRequest = 3;
+$missingPowerCount    = 0;
 
 foreach ($allCategories as $cat) {
     $template = $cat['template'] ?? '';
@@ -233,19 +247,33 @@ foreach ($allCategories as $cat) {
     }
 
     $modelKey = 'model_' . $cat['id'];
-    $cached   = $chargerCache[$modelKey] ?? null;
-    $power    = $cached['power'] ?? null;
 
-    // Automaattinen rikastus: max 3 AI-hakua per kutsu
-    if ($power === null && getenv('ANTHROPIC_API_KEY') && $aiCallsThisRequest < $maxAiCallsPerRequest) {
-        $aiCallsThisRequest++;
-        $power = enrichChargingDataWithAI($cat['name']);
-        if ($power !== null) {
-            $chargerCache[$modelKey] = [
-                'power'      => $power,
-                'fetched_at' => date('c'),
-            ];
-            $cacheUpdated = true;
+    // Tarkista onko cachessa — avain puuttuu TAI power on null
+    $cached = isset($chargerCache[$modelKey]) ? $chargerCache[$modelKey] : null;
+    $power  = ($cached !== null && isset($cached['power'])) ? $cached['power'] : null;
+
+    if ($power === null) {
+        $missingPowerCount++;
+        // Automaattinen rikastus: max 3 AI-hakua per kutsu
+        if (getenv('ANTHROPIC_API_KEY') && $aiCallsThisRequest < $maxAiCallsPerRequest) {
+            $aiCallsThisRequest++;
+            $fetched = enrichChargingDataWithAI($cat['name']);
+            if ($fetched !== null) {
+                $power = $fetched;
+                $chargerCache[$modelKey] = [
+                    'power'      => $power,
+                    'fetched_at' => date('c'),
+                ];
+                $cacheUpdated = true;
+            } else {
+                // Merkitään yritetyksi jotta ei haeta uudelleen joka kerta
+                $chargerCache[$modelKey] = [
+                    'power'      => null,
+                    'fetched_at' => date('c'),
+                    'failed'     => true,
+                ];
+                $cacheUpdated = true;
+            }
         }
     }
 
@@ -291,8 +319,9 @@ if ($path === '/models') {
 echo json_encode([
     'status'               => 'ok',
     'count'                => count($all),
+    'missing_power'        => $missingPowerCount,
+    'ai_enriched_this_req' => $aiCallsThisRequest,
     'models_url'           => '/models',
     'allowed_roots'        => $ALLOWED_ROOT_IDS,
-    'ai_enriched_this_req' => $aiCallsThisRequest,
     'models'               => $all
 ], JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
