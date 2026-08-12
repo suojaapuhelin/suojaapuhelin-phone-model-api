@@ -123,7 +123,13 @@ function enrichChargingDataWithAI($modelName) {
 
     $response = curl_exec($ch);
     $httpCode  = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+    $curlError = curl_error($ch);
     curl_close($ch);
+
+    if (isset($_GET['debug'])) {
+        echo json_encode(['http_code' => $httpCode, 'curl_error' => $curlError, 'response' => substr($response, 0, 500)]);
+        exit;
+    }
 
     if ($httpCode !== 200 || !$response) return null;
 
