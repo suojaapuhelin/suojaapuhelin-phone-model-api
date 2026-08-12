@@ -26,8 +26,7 @@ function loadChargerCache() {
 }
 
 function saveChargerCache(array $cache) {
-    $result = file_put_contents(getCacheFile(), json_encode($cache, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT));
-    return $result !== false;
+    return file_put_contents(getCacheFile(), json_encode($cache, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT)) !== false;
 }
 
 function isVisibleCategory($cat) {
@@ -140,16 +139,79 @@ function enrichChargingDataWithAI($modelName) {
     return is_array($parsed) ? $parsed : null;
 }
 
+function fetchAllModels($apiUrl, $user, $key, $ALLOWED_ROOT_IDS) {
+    $allCategories  = [];
+    $categoriesById = [];
+    $page     = 1;
+    $pageSize = 100;
+
+    do {
+        $endpoint = $apiUrl . '/categories?page_size=' . $pageSize . '&page=' . $page;
+        $ch = curl_init($endpoint);
+        curl_setopt_array($ch, [
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_USERPWD        => $user . ':' . $key,
+            CURLOPT_HTTPAUTH       => CURLAUTH_BASIC,
+            CURLOPT_HTTPHEADER     => ['Accept: application/json'],
+            CURLOPT_TIMEOUT        => 30,
+        ]);
+        $response = curl_exec($ch);
+        $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+        curl_close($ch);
+
+        if ($httpCode !== 200 || !$response) break;
+
+        $json = json_decode($response, true);
+        foreach ($json['data'] ?? [] as $cat) {
+            $allCategories[]            = $cat;
+            $categoriesById[$cat['id']] = $cat;
+        }
+
+        $pageCount = $json['meta']['page_count'] ?? $page;
+        $page++;
+    } while ($page <= $pageCount);
+
+    // Suodata mallit
+    $models = [];
+    foreach ($allCategories as $cat) {
+        $template = $cat['template'] ?? '';
+        if (!isVisibleCategory($cat)) continue;
+        $matchedRootId = getMatchedRootId($cat['id'], $ALLOWED_ROOT_IDS, $categoriesById);
+        if (!$matchedRootId) continue;
+        if (!str_starts_with($template, 'category/')) continue;
+        if (!preg_match('/(usb-c|lightning|micro-usb|magsafe)/', $template)) continue;
+        $brand = getTopBrandUnderRoot($cat['id'], $matchedRootId, $categoriesById);
+        if (!$brand || !isVisibleCategory($brand)) continue;
+        $nameLower = mb_strtolower($cat['name']);
+        if (str_contains($nameLower, 'laturit') || str_contains($nameLower, 'kaapelit') ||
+            str_contains($nameLower, 'latauskaapelit') || str_contains($nameLower, 'panssarilasit') ||
+            str_contains($nameLower, 'suojakuoret') || str_contains($nameLower, 'suojakotelot')) {
+            continue;
+        }
+        $models[] = [
+            'cat'           => $cat,
+            'brand'         => $brand,
+            'matchedRootId' => $matchedRootId,
+            'template'      => $template,
+        ];
+    }
+    return $models;
+}
+
 // ─── Endpointit ──────────────────────────────────────────────────────────────
 
+$apiUrl = rtrim(getenv('MCF_API_URL'), '/');
+$user   = getenv('MCF_API_USER');
+$key    = getenv('MCF_API_KEY');
+
 if ($path === '/debug') {
-    $key = getenv('ANTHROPIC_API_KEY');
+    $apiKey = getenv('ANTHROPIC_API_KEY');
     $cacheFile = getCacheFile();
     $dir = dirname($cacheFile);
     $cache = loadChargerCache();
     echo json_encode([
-        'key_set'      => !empty($key),
-        'key_preview'  => $key ? substr($key, 0, 15) . '...' : null,
+        'key_set'      => !empty($apiKey),
+        'key_preview'  => $apiKey ? substr($apiKey, 0, 15) . '...' : null,
         'cache_file'   => $cacheFile,
         'dir_exists'   => is_dir($dir),
         'dir_writable' => is_writable($dir),
@@ -166,116 +228,83 @@ if ($path === '/enrich') {
         exit;
     }
     $power = enrichChargingDataWithAI($model);
-    if ($power !== null) {
-        $cache = loadChargerCache();
-        $cache['manual_' . md5($model)] = ['power' => $power, 'fetched_at' => date('c')];
-        saveChargerCache($cache);
-    }
     echo json_encode(['model' => $model, 'power' => $power], JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
     exit;
 }
 
-// ─── MCF API ─────────────────────────────────────────────────────────────────
+// /enrich-all — hakee kaikki puuttuvat mallit, max 5 per kutsu
+// Kutsu toistuvasti kunnes "remaining" on 0
+if ($path === '/enrich-all') {
+    set_time_limit(120);
+    $maxPerCall = 5;
+    $cache      = loadChargerCache();
+    $models     = fetchAllModels($apiUrl, $user, $key, $ALLOWED_ROOT_IDS);
 
-$apiUrl = rtrim(getenv('MCF_API_URL'), '/');
-$user   = getenv('MCF_API_USER');
-$key    = getenv('MCF_API_KEY');
+    $enriched = 0;
+    $failed   = 0;
+    $skipped  = 0;
+    $remaining = 0;
 
-$chargerCache   = loadChargerCache();
-$allCategories  = [];
-$categoriesById = [];
-$page     = 1;
-$pageSize = 100;
+    foreach ($models as $m) {
+        $cat      = $m['cat'];
+        $modelKey = 'model_' . $cat['id'];
+        $cached   = $cache[$modelKey] ?? null;
 
-do {
-    $endpoint = $apiUrl . '/categories?page_size=' . $pageSize . '&page=' . $page;
-    $ch = curl_init($endpoint);
-    curl_setopt_array($ch, [
-        CURLOPT_RETURNTRANSFER => true,
-        CURLOPT_USERPWD        => $user . ':' . $key,
-        CURLOPT_HTTPAUTH       => CURLAUTH_BASIC,
-        CURLOPT_HTTPHEADER     => ['Accept: application/json'],
-        CURLOPT_TIMEOUT        => 30,
-    ]);
-    $response = curl_exec($ch);
-    $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-    $error    = curl_error($ch);
-    curl_close($ch);
+        // Ohita jos jo onnistuneesti haettu
+        if ($cached !== null && isset($cached['power']) && $cached['power'] !== null) {
+            $skipped++;
+            continue;
+        }
 
-    if ($httpCode !== 200 || !$response) {
-        echo json_encode(['status' => 'error', 'endpoint' => $endpoint, 'http_code' => $httpCode, 'error' => $error ?: null], JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
-        exit;
-    }
+        // Ohita jos jo yritetty ja epäonnistui
+        if ($cached !== null && isset($cached['failed']) && $cached['failed'] === true) {
+            $skipped++;
+            continue;
+        }
 
-    $json = json_decode($response, true);
-    foreach ($json['data'] ?? [] as $cat) {
-        $allCategories[]            = $cat;
-        $categoriesById[$cat['id']] = $cat;
-    }
+        if ($enriched >= $maxPerCall) {
+            $remaining++;
+            continue;
+        }
 
-    $pageCount = $json['meta']['page_count'] ?? $page;
-    $page++;
-} while ($page <= $pageCount);
-
-// ─── Mallilista + automaattinen AI-rikastus (max 3 per kutsu) ────────────────
-
-$all                  = [];
-$cacheUpdated         = false;
-$aiCallsThisRequest   = 0;
-$maxAiCallsPerRequest = 3;
-$missingPowerCount    = 0;
-
-foreach ($allCategories as $cat) {
-    $template = $cat['template'] ?? '';
-
-    if (!isVisibleCategory($cat)) continue;
-
-    $matchedRootId = getMatchedRootId($cat['id'], $ALLOWED_ROOT_IDS, $categoriesById);
-    if (!$matchedRootId) continue;
-
-    if (!str_starts_with($template, 'category/')) continue;
-    if (!preg_match('/(usb-c|lightning|micro-usb|magsafe)/', $template)) continue;
-
-    $brand = getTopBrandUnderRoot($cat['id'], $matchedRootId, $categoriesById);
-    if (!$brand || !isVisibleCategory($brand)) continue;
-
-    $nameLower = mb_strtolower($cat['name']);
-    if (str_contains($nameLower, 'laturit') || str_contains($nameLower, 'kaapelit') ||
-        str_contains($nameLower, 'latauskaapelit') || str_contains($nameLower, 'panssarilasit') ||
-        str_contains($nameLower, 'suojakuoret') || str_contains($nameLower, 'suojakotelot')) {
-        continue;
-    }
-
-    $modelKey = 'model_' . $cat['id'];
-
-    // Tarkista onko cachessa — avain puuttuu TAI power on null
-    $cached = isset($chargerCache[$modelKey]) ? $chargerCache[$modelKey] : null;
-    $power  = ($cached !== null && isset($cached['power'])) ? $cached['power'] : null;
-
-    if ($power === null) {
-        $missingPowerCount++;
-        // Automaattinen rikastus: max 3 AI-hakua per kutsu
-        if (getenv('ANTHROPIC_API_KEY') && $aiCallsThisRequest < $maxAiCallsPerRequest) {
-            $aiCallsThisRequest++;
-            $fetched = enrichChargingDataWithAI($cat['name']);
-            if ($fetched !== null) {
-                $power = $fetched;
-                $chargerCache[$modelKey] = [
-                    'power'      => $power,
-                    'fetched_at' => date('c'),
-                ];
-                $cacheUpdated = true;
-            } else {
-                // Merkitään yritetyksi jotta ei haeta uudelleen joka kerta
-                $chargerCache[$modelKey] = [
-                    'power'      => null,
-                    'fetched_at' => date('c'),
-                    'failed'     => true,
-                ];
-                $cacheUpdated = true;
-            }
+        $power = enrichChargingDataWithAI($cat['name']);
+        if ($power !== null) {
+            $cache[$modelKey] = ['power' => $power, 'fetched_at' => date('c')];
+            $enriched++;
+        } else {
+            $cache[$modelKey] = ['power' => null, 'fetched_at' => date('c'), 'failed' => true];
+            $failed++;
+            $enriched++; // lasketaan mukaan ettei loopata ikuisesti
         }
     }
+
+    saveChargerCache($cache);
+
+    echo json_encode([
+        'status'    => $remaining > 0 ? 'in_progress' : 'done',
+        'enriched'  => $enriched,
+        'failed'    => $failed,
+        'skipped'   => $skipped,
+        'remaining' => $remaining,
+        'message'   => $remaining > 0 ? 'Kutsu /enrich-all uudelleen' : 'Kaikki mallit rikastettu!',
+    ], JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
+    exit;
+}
+
+// ─── MCF API + mallilista ─────────────────────────────────────────────────────
+
+$chargerCache = loadChargerCache();
+$models       = fetchAllModels($apiUrl, $user, $key, $ALLOWED_ROOT_IDS);
+$all          = [];
+
+foreach ($models as $m) {
+    $cat           = $m['cat'];
+    $brand         = $m['brand'];
+    $matchedRootId = $m['matchedRootId'];
+    $template      = $m['template'];
+    $modelKey      = 'model_' . $cat['id'];
+    $cached        = $chargerCache[$modelKey] ?? null;
+    $power         = ($cached && isset($cached['power'])) ? $cached['power'] : null;
 
     if ($power && isset($power['wired_max_w'])) {
         $power['recommended_min_watts'] = getRecommendedMinWatts($power['wired_max_w']);
@@ -297,13 +326,9 @@ foreach ($allCategories as $cat) {
             'magsafe'   => str_contains($template, 'magsafe'),
         ],
         'power'            => $power,
-        'power_source'     => $power ? ($cached ? 'charger_cache' : 'ai_realtime') : null,
-        'power_fetched_at' => $chargerCache[$modelKey]['fetched_at'] ?? null,
+        'power_source'     => $power ? 'charger_cache' : null,
+        'power_fetched_at' => $cached['fetched_at'] ?? null,
     ];
-}
-
-if ($cacheUpdated) {
-    saveChargerCache($chargerCache);
 }
 
 usort($all, function ($a, $b) {
@@ -311,17 +336,17 @@ usort($all, function ($a, $b) {
     return $brandCompare !== 0 ? $brandCompare : strcasecmp($a['name'], $b['name']);
 });
 
+$missingPower = count(array_filter($all, fn($m) => $m['power'] === null));
+
 if ($path === '/models') {
     echo json_encode($all, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
     exit;
 }
 
 echo json_encode([
-    'status'               => 'ok',
-    'count'                => count($all),
-    'missing_power'        => $missingPowerCount,
-    'ai_enriched_this_req' => $aiCallsThisRequest,
-    'models_url'           => '/models',
-    'allowed_roots'        => $ALLOWED_ROOT_IDS,
-    'models'               => $all
+    'status'        => 'ok',
+    'count'         => count($all),
+    'missing_power' => $missingPower,
+    'enrich_url'    => '/enrich-all',
+    'models_url'    => '/models',
 ], JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
