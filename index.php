@@ -291,29 +291,22 @@ if ($path === '/enrich-all') {
     exit;
 }
 if ($path === '/upload-cache') {
-    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-        $data = file_get_contents('php://input');
+    header('Content-Type: text/html; charset=utf-8');
+    if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_FILES['cache'])) {
+        $data = file_get_contents($_FILES['cache']['tmp_name']);
         $parsed = json_decode($data, true);
         if (!is_array($parsed)) {
-            echo json_encode(['status' => 'error', 'message' => 'Virheellinen JSON']);
-            exit;
+            echo '<p style="color:red">Virheellinen JSON-tiedosto</p>';
+        } else {
+            saveChargerCache($parsed);
+            echo '<p style="color:green">✓ Ladattu ' . count($parsed) . ' mallia onnistuneesti!</p>';
         }
-        saveChargerCache($parsed);
-        echo json_encode(['status' => 'ok', 'count' => count($parsed)]);
-        exit;
     }
-    // GET - näytä lomake
-    header('Content-Type: text/html; charset=utf-8');
     echo '<form method="post" enctype="multipart/form-data">
+        <p>Valitse charger_cache.json tiedosto:</p>
         <input type="file" name="cache" accept=".json">
         <button type="submit">Lähetä</button>
     </form>';
-    if ($_FILES['cache'] ?? null) {
-        $data = file_get_contents($_FILES['cache']['tmp_name']);
-        $parsed = json_decode($data, true);
-        saveChargerCache($parsed);
-        echo '<p>Ladattu ' . count($parsed) . ' mallia!</p>';
-    }
     exit;
 }
 
