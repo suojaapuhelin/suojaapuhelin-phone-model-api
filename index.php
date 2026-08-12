@@ -290,6 +290,32 @@ if ($path === '/enrich-all') {
     ], JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
     exit;
 }
+if ($path === '/upload-cache') {
+    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+        $data = file_get_contents('php://input');
+        $parsed = json_decode($data, true);
+        if (!is_array($parsed)) {
+            echo json_encode(['status' => 'error', 'message' => 'Virheellinen JSON']);
+            exit;
+        }
+        saveChargerCache($parsed);
+        echo json_encode(['status' => 'ok', 'count' => count($parsed)]);
+        exit;
+    }
+    // GET - näytä lomake
+    header('Content-Type: text/html; charset=utf-8');
+    echo '<form method="post" enctype="multipart/form-data">
+        <input type="file" name="cache" accept=".json">
+        <button type="submit">Lähetä</button>
+    </form>';
+    if ($_FILES['cache'] ?? null) {
+        $data = file_get_contents($_FILES['cache']['tmp_name']);
+        $parsed = json_decode($data, true);
+        saveChargerCache($parsed);
+        echo '<p>Ladattu ' . count($parsed) . ' mallia!</p>';
+    }
+    exit;
+}
 
 // ─── MCF API + mallilista ─────────────────────────────────────────────────────
 
