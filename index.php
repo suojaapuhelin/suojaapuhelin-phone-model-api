@@ -97,7 +97,7 @@ function enrichChargingDataWithAI($modelName) {
         . '"source":<"GSMArena"|"manufacturer"|muu lyhyt merkintä>}';
 
     $payload = json_encode([
-        'model'      => 'claude-sonnet-4-20250514',
+        'model'      => 'model' => 'claude-sonnet-4-6',
         'max_tokens' => 512,
         'tools'      => [['type' => 'web_search_20250305', 'name' => 'web_search']],
         'system'     => $systemPrompt,
