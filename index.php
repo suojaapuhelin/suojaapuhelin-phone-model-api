@@ -11,7 +11,7 @@ $ALLOWED_ROOT_IDS = [
 ];
 
 function getCacheFile() {
-    return __DIR__ . '/charger_cache.json';
+    return '/app/storage/charger_cache.json';
 }
 
 function loadChargerCache() {
