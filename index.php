@@ -109,7 +109,7 @@ function enrichChargingDataWithAI($modelName) {
             'anthropic-version: 2023-06-01',
             'anthropic-beta: web-search-2025-03-05',
         ],
-        CURLOPT_TIMEOUT => 30,
+        CURLOPT_TIMEOUT => 25,
     ]);
 
     $response = curl_exec($ch);
@@ -193,10 +193,12 @@ do {
     $page++;
 } while ($page <= $pageCount);
 
-// ─── Mallilista + automaattinen AI-rikastus ───────────────────────────────────
+// ─── Mallilista + automaattinen AI-rikastus (max 3 per kutsu) ────────────────
 
-$all          = [];
-$cacheUpdated = false;
+$all                = [];
+$cacheUpdated       = false;
+$aiCallsThisRequest = 0;
+$maxAiCallsPerRequest = 3;
 
 foreach ($allCategories as $cat) {
     $template = $cat['template'] ?? '';
@@ -223,7 +225,9 @@ foreach ($allCategories as $cat) {
     $cached   = $chargerCache[$modelKey] ?? null;
     $power    = $cached['power'] ?? null;
 
-    if ($power === null && getenv('ANTHROPIC_API_KEY')) {
+    // Automaattinen rikastus: max 3 AI-hakua per kutsu
+    if ($power === null && getenv('ANTHROPIC_API_KEY') && $aiCallsThisRequest < $maxAiCallsPerRequest) {
+        $aiCallsThisRequest++;
         $power = enrichChargingDataWithAI($cat['name']);
         if ($power !== null) {
             $chargerCache[$modelKey] = [
@@ -274,9 +278,10 @@ if ($path === '/models') {
 }
 
 echo json_encode([
-    'status'        => 'ok',
-    'count'         => count($all),
-    'models_url'    => '/models',
-    'allowed_roots' => $ALLOWED_ROOT_IDS,
-    'models'        => $all
+    'status'               => 'ok',
+    'count'                => count($all),
+    'models_url'           => '/models',
+    'allowed_roots'        => $ALLOWED_ROOT_IDS,
+    'ai_enriched_this_req' => $aiCallsThisRequest,
+    'models'               => $all
 ], JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
