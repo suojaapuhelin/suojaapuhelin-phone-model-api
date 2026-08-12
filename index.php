@@ -11,7 +11,11 @@ $ALLOWED_ROOT_IDS = [
 ];
 
 function getCacheFile() {
-    return '/app/storage/charger_cache.json';
+    $dir = '/app/storage';
+    if (!is_dir($dir)) {
+        mkdir($dir, 0777, true);
+    }
+    return $dir . '/charger_cache.json';
 }
 
 function loadChargerCache() {
