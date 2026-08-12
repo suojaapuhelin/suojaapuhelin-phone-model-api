@@ -10,8 +10,6 @@ $ALLOWED_ROOT_IDS = [
     348  // Tabletin suojat
 ];
 
-// ─── Cache ───────────────────────────────────────────────────────────────────
-
 function getCacheFile() {
     return __DIR__ . '/charger_cache.json';
 }
@@ -26,8 +24,6 @@ function loadChargerCache() {
 function saveChargerCache(array $cache) {
     file_put_contents(getCacheFile(), json_encode($cache, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT));
 }
-
-// ─── Kategorialogiikat (ennallaan) ───────────────────────────────────────────
 
 function isVisibleCategory($cat) {
     if (isset($cat['visible']) && !$cat['visible']) return false;
@@ -79,14 +75,9 @@ function getRecommendedMinWatts($wiredMaxW) {
     return (int) $wiredMaxW;
 }
 
-// ─── AI-rikastus (Anthropic + web search) ────────────────────────────────────
-
 function enrichChargingDataWithAI($modelName) {
     $apiKey = getenv('ANTHROPIC_API_KEY');
-
-    if (!$apiKey) {
-        return null;
-    }
+    if (!$apiKey) return null;
 
     $systemPrompt = 'Olet asiantuntija, joka hakee puhelimien lataustehotiedot. '
         . 'Palauta AINA pelkkä JSON-objekti ilman markdown-koodilohkoja tai muuta tekstiä. '
@@ -97,7 +88,7 @@ function enrichChargingDataWithAI($modelName) {
         . '"source":<"GSMArena"|"manufacturer"|muu lyhyt merkintä>}';
 
     $payload = json_encode([
-        'model'      => 'model' => 'claude-sonnet-4-6',
+        'model'      => 'claude-sonnet-4-6',
         'max_tokens' => 512,
         'tools'      => [['type' => 'web_search_20250305', 'name' => 'web_search']],
         'system'     => $systemPrompt,
@@ -123,13 +114,7 @@ function enrichChargingDataWithAI($modelName) {
 
     $response = curl_exec($ch);
     $httpCode  = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-    $curlError = curl_error($ch);
     curl_close($ch);
-
-    if (isset($_GET['debug'])) {
-        echo json_encode(['http_code' => $httpCode, 'curl_error' => $curlError, 'response' => substr($response, 0, 500)]);
-        exit;
-    }
 
     if ($httpCode !== 200 || !$response) return null;
 
@@ -144,7 +129,16 @@ function enrichChargingDataWithAI($modelName) {
     return is_array($parsed) ? $parsed : null;
 }
 
-// ─── /enrich -endpoint (yksittäinen malli, GET-parametrilla) ─────────────────
+// ─── Endpointit ──────────────────────────────────────────────────────────────
+
+if ($path === '/debug') {
+    $key = getenv('ANTHROPIC_API_KEY');
+    echo json_encode([
+        'key_set'     => !empty($key),
+        'key_preview' => $key ? substr($key, 0, 15) . '...' : null
+    ]);
+    exit;
+}
 
 if ($path === '/enrich') {
     $model = $_GET['model'] ?? '';
@@ -156,23 +150,15 @@ if ($path === '/enrich') {
     echo json_encode(['model' => $model, 'power' => $power], JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
     exit;
 }
-if ($path === '/debug') {
-    $key = getenv('ANTHROPIC_API_KEY');
-    echo json_encode([
-        'key_set' => !empty($key),
-        'key_preview' => $key ? substr($key, 0, 15) . '...' : null
-    ]);
-    exit;
-}
 
-// ─── MCF API: hae kaikki kategoriat ──────────────────────────────────────────
+// ─── MCF API ─────────────────────────────────────────────────────────────────
 
 $apiUrl = rtrim(getenv('MCF_API_URL'), '/');
 $user   = getenv('MCF_API_USER');
 $key    = getenv('MCF_API_KEY');
 
-$chargerCache  = loadChargerCache();
-$allCategories = [];
+$chargerCache   = loadChargerCache();
+$allCategories  = [];
 $categoriesById = [];
 $page     = 1;
 $pageSize = 100;
@@ -199,7 +185,7 @@ do {
 
     $json = json_decode($response, true);
     foreach ($json['data'] ?? [] as $cat) {
-        $allCategories[]          = $cat;
+        $allCategories[]            = $cat;
         $categoriesById[$cat['id']] = $cat;
     }
 
@@ -207,9 +193,9 @@ do {
     $page++;
 } while ($page <= $pageCount);
 
-// ─── Rakenna mallilista + automaattinen AI-rikastus uusille malleille ─────────
+// ─── Mallilista + automaattinen AI-rikastus ───────────────────────────────────
 
-$all         = [];
+$all          = [];
 $cacheUpdated = false;
 
 foreach ($allCategories as $cat) {
@@ -237,7 +223,6 @@ foreach ($allCategories as $cat) {
     $cached   = $chargerCache[$modelKey] ?? null;
     $power    = $cached['power'] ?? null;
 
-    // *** Automaattinen rikastus: jos cachessa ei ole tietoa, kysy AI:lta ***
     if ($power === null && getenv('ANTHROPIC_API_KEY')) {
         $power = enrichChargingDataWithAI($cat['name']);
         if ($power !== null) {
@@ -254,27 +239,26 @@ foreach ($allCategories as $cat) {
     }
 
     $all[] = [
-        'id'              => $cat['id'],
-        'name'            => $cat['name'],
-        'url'             => '/category/' . $cat['id'],
-        'parent_id'       => $cat['parent_id'],
-        'root_id'         => $matchedRootId,
-        'brand_id'        => $brand['id'],
-        'brand_name'      => $brand['name'],
-        'template'        => $template,
-        'charging'        => [
+        'id'               => $cat['id'],
+        'name'             => $cat['name'],
+        'url'              => '/category/' . $cat['id'],
+        'parent_id'        => $cat['parent_id'],
+        'root_id'          => $matchedRootId,
+        'brand_id'         => $brand['id'],
+        'brand_name'       => $brand['name'],
+        'template'         => $template,
+        'charging'         => [
             'usb_c'     => str_contains($template, 'usb-c'),
             'lightning' => str_contains($template, 'lightning'),
             'micro_usb' => str_contains($template, 'micro-usb'),
             'magsafe'   => str_contains($template, 'magsafe'),
         ],
-        'power'           => $power,
-        'power_source'    => $power ? ($cached ? 'charger_cache' : 'ai_realtime') : null,
-        'power_fetched_at'=> $chargerCache[$modelKey]['fetched_at'] ?? null,
+        'power'            => $power,
+        'power_source'     => $power ? ($cached ? 'charger_cache' : 'ai_realtime') : null,
+        'power_fetched_at' => $chargerCache[$modelKey]['fetched_at'] ?? null,
     ];
 }
 
-// Tallennetaan cache jos päivittyi
 if ($cacheUpdated) {
     saveChargerCache($chargerCache);
 }
