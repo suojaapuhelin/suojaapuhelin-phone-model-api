@@ -150,6 +150,14 @@ if ($path === '/enrich') {
     echo json_encode(['model' => $model, 'power' => $power], JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
     exit;
 }
+if ($path === '/debug') {
+    $key = getenv('ANTHROPIC_API_KEY');
+    echo json_encode([
+        'key_set' => !empty($key),
+        'key_preview' => $key ? substr($key, 0, 15) . '...' : null
+    ]);
+    exit;
+}
 
 // ─── MCF API: hae kaikki kategoriat ──────────────────────────────────────────
 
