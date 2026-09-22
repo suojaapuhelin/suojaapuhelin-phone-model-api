@@ -138,11 +138,17 @@ function getRecommendedMinWatts($wiredMaxW) {
  * - array = onnistunut JSON-vastaus
  * - null  = haku epäonnistui tai vastausta ei voitu jäsentää
  */
-function enrichChargingDataWithAI($modelName) {
+function enrichChargingDataWithAI($modelName, $debug = false) {
     $apiKey = getenv('ANTHROPIC_API_KEY');
 
     if (!$apiKey) {
-        return null;
+        return $debug
+            ? [
+                'ok' => false,
+                'error' => 'missing_api_key',
+                'message' => 'ANTHROPIC_API_KEY puuttuu Railwayn ympäristömuuttujista.'
+            ]
+            : null;
     }
 
     $systemPrompt =
@@ -152,8 +158,8 @@ function enrichChargingDataWithAI($modelName) {
         . '{"wired_max_w":<numero tai null>,'
         . '"wireless_max_w":<numero tai null>,'
         . '"wireless_protocol":<"MagSafe"|"Qi2"|"Qi"|null>,'
-        . '"fast_charge_tech":<"PD 3.0"|"SuperVOOC"|"65W Flash Charge"|... tai null>,'
-        . '"source":<"GSMArena"|"manufacturer"|muu lyhyt merkintä>}';
+        . '"fast_charge_tech":<merkkijono tai null>,'
+        . '"source":<merkkijono tai null>}';
 
     $payload = json_encode([
         'model'      => 'claude-sonnet-4-6',
@@ -192,18 +198,62 @@ function enrichChargingDataWithAI($modelName) {
         CURLOPT_TIMEOUT => 35,
     ]);
 
-    $response = curl_exec($ch);
-    $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+    $response  = curl_exec($ch);
+    $httpCode  = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+    $curlError = curl_error($ch);
     curl_close($ch);
 
-    if ($httpCode !== 200 || !$response) {
-        return null;
+    if ($curlError) {
+        return $debug
+            ? [
+                'ok' => false,
+                'error' => 'curl_error',
+                'http_code' => $httpCode,
+                'message' => $curlError
+            ]
+            : null;
+    }
+
+    if (!$response) {
+        return $debug
+            ? [
+                'ok' => false,
+                'error' => 'empty_response',
+                'http_code' => $httpCode
+            ]
+            : null;
     }
 
     $data = json_decode($response, true);
 
+    if ($httpCode !== 200) {
+        $safeError = null;
+
+        if (is_array($data)) {
+            $safeError = [
+                'type' => $data['error']['type'] ?? null,
+                'message' => $data['error']['message'] ?? null
+            ];
+        }
+
+        return $debug
+            ? [
+                'ok' => false,
+                'error' => 'anthropic_http_error',
+                'http_code' => $httpCode,
+                'anthropic_error' => $safeError
+            ]
+            : null;
+    }
+
     if (!is_array($data)) {
-        return null;
+        return $debug
+            ? [
+                'ok' => false,
+                'error' => 'invalid_anthropic_json',
+                'http_code' => $httpCode
+            ]
+            : null;
     }
 
     $text = '';
@@ -215,21 +265,34 @@ function enrichChargingDataWithAI($modelName) {
     }
 
     if ($text === '') {
-        return null;
+        return $debug
+            ? [
+                'ok' => false,
+                'error' => 'no_text_block',
+                'http_code' => $httpCode,
+                'content_types' => array_values(array_filter(array_map(
+                    fn($block) => $block['type'] ?? null,
+                    $data['content'] ?? []
+                )))
+            ]
+            : null;
     }
 
-    $clean = trim(
-        preg_replace('/```json|```/i', '', $text)
-    );
-
+    $clean = trim(preg_replace('/```json|```/i', '', $text));
     $parsed = json_decode($clean, true);
 
     if (!is_array($parsed)) {
-        return null;
+        return $debug
+            ? [
+                'ok' => false,
+                'error' => 'returned_text_not_valid_json',
+                'http_code' => $httpCode,
+                'raw_text' => mb_substr($text, 0, 1500)
+            ]
+            : null;
     }
 
-    // Normalisoidaan pakolliset kentät
-    $parsed = [
+    $power = [
         'wired_max_w'       => isset($parsed['wired_max_w']) && is_numeric($parsed['wired_max_w'])
             ? (float) $parsed['wired_max_w']
             : null,
@@ -241,12 +304,24 @@ function enrichChargingDataWithAI($modelName) {
         'source'            => $parsed['source'] ?? null,
     ];
 
-    // Jos johtolataustehoa ei löytynyt, mallia ei katsota onnistuneesti rikastetuksi.
-    if ($parsed['wired_max_w'] === null) {
-        return null;
+    if ($power['wired_max_w'] === null) {
+        return $debug
+            ? [
+                'ok' => false,
+                'error' => 'wired_power_missing',
+                'http_code' => $httpCode,
+                'parsed' => $power
+            ]
+            : null;
     }
 
-    return $parsed;
+    return $debug
+        ? [
+            'ok' => true,
+            'http_code' => $httpCode,
+            'power' => $power
+        ]
+        : $power;
 }
 
 function fetchAllModels($apiUrl, $user, $key, $ALLOWED_ROOT_IDS) {
@@ -400,12 +475,12 @@ if ($path === '/enrich') {
         exit;
     }
 
-    $power = enrichChargingDataWithAI($model);
+    $result = enrichChargingDataWithAI($model, true);
 
     echo json_encode([
-        'status' => $power !== null ? 'ok' : 'failed',
+        'status' => ($result['ok'] ?? false) ? 'ok' : 'failed',
         'model'  => $model,
-        'power'  => $power
+        'debug'  => $result
     ], JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
 
     exit;
