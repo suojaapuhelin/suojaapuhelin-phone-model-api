@@ -278,8 +278,47 @@ function enrichChargingDataWithAI($modelName, $debug = false) {
             : null;
     }
 
-    $clean = trim(preg_replace('/```json|```/i', '', $text));
-    $parsed = json_decode($clean, true);
+    // Poimi JSON luotettavasti, vaikka Claude kirjoittaisi ennen/jälkeen selitystekstiä.
+    $jsonText = null;
+
+    // 1) Ensisijaisesti poimitaan ```json ... ``` -koodilohko.
+    if (preg_match('/```json\s*(\{.*?\})\s*```/is', $text, $match)) {
+        $jsonText = trim($match[1]);
+    }
+
+    // 2) Jos koodilohkoa ei ole, kokeillaan koko vastausta sellaisenaan.
+    if ($jsonText === null) {
+        $candidate = trim($text);
+        $candidate = trim(preg_replace('/^```(?:json)?\s*|\s*```$/i', '', $candidate));
+
+        $candidateParsed = json_decode($candidate, true);
+
+        if (is_array($candidateParsed)) {
+            $jsonText = $candidate;
+        }
+    }
+
+    // 3) Viimeinen fallback: poimitaan ensimmäisestä { merkistä viimeiseen } merkkiin.
+    if ($jsonText === null) {
+        $firstBrace = strpos($text, '{');
+        $lastBrace  = strrpos($text, '}');
+
+        if (
+            $firstBrace !== false &&
+            $lastBrace !== false &&
+            $lastBrace > $firstBrace
+        ) {
+            $jsonText = substr(
+                $text,
+                $firstBrace,
+                $lastBrace - $firstBrace + 1
+            );
+        }
+    }
+
+    $parsed = $jsonText !== null
+        ? json_decode($jsonText, true)
+        : null;
 
     if (!is_array($parsed)) {
         return $debug
